@@ -75,6 +75,7 @@ public class Helpdesk_CspAddComplaintTest extends TestBase {
 		CmplntPage.EnterDescription("Testing from IT Team");
 		loger.info("Click on Save Button");
 		CmplntPage.ClickonSaveBttn();
+		loger.info("Assert with proper Verification Message");
 		String mssge = CmplntPage.GetErrorMssge_BlankApplType();
 		Assert.assertEquals(mssge, "Application Type is required");
 
