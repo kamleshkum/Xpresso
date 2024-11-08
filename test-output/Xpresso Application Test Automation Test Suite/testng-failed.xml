@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Xpresso Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.xpresso.qa.ExtentReportListner.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="Xpresso web App Test Cases(failed)">
+    <classes>
+      <class name="com.xpresso.qa.testcases.CovidWidowPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="ApplywithNoChild"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.xpresso.qa.testcases.CovidWidowPageTest -->
+    </classes>
+  </test> <!-- Xpresso web App Test Cases(failed) -->
+</suite> <!-- Failed suite [Xpresso Application Test Automation Test Suite] -->
