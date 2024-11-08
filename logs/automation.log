@@ -3226,3 +3226,41 @@
 17:26:20.245 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
 17:26:20.406 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
 17:26:22.875 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+12:16:25.182 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:16:47.422 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:16:48.875 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+12:16:48.934 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+12:16:49.943 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:16:50.103 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+12:16:52.105 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+12:16:52.395 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+12:16:52.703 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+12:16:52.891 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+12:16:57.632 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:17:19.813 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:17:21.292 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+12:17:21.360 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+12:17:22.056 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Advance button config page
+12:17:22.056 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:17:22.235 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+12:17:24.172 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+12:17:24.283 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+12:21:09.853 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:21:32.566 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:21:34.041 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+12:21:34.109 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+12:21:34.812 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:21:34.970 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+12:21:36.961 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+12:21:37.196 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+12:21:37.475 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+12:21:37.658 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+12:21:42.147 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:22:04.792 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:22:06.162 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+12:22:06.218 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+12:22:06.902 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Advance button config page
+12:22:06.903 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:22:07.057 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+12:22:09.050 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+12:22:09.140 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
