@@ -45,7 +45,7 @@ public class AddComplaintPage extends TestBase {
 	@FindBy(xpath = "//*[text()='Sub Category']/following-sibling::ng-select/ng-dropdown-panel/div/div/div/span")
 	List<WebElement> SubCategorytypeAllValues;
 
-	@FindBy(xpath = "//div[text()='Please Enter Valid Transaction Id ']")
+	@FindBy(xpath = "//*[text()='Transaction Id']/following-sibling::input")
 	WebElement TransactionID;
 
 	@FindBy(xpath = "//textarea[@id='complaintDescription']")
@@ -83,6 +83,12 @@ public class AddComplaintPage extends TestBase {
 
 	@FindBy(xpath = "//*[contains(text(),'Description is required')]")
 	WebElement ErrorMessageComplaintDesc;
+	
+	@FindBy(xpath="//*[text()='{*} Invalid Transaction Id']")
+	WebElement InvalidTxMessageWinodw;
+	
+	@FindBy(xpath="//*[contains(text(),'Our customer care will revert on your complaint soon.')]")
+	WebElement SucessMssge;
 
 	public AddComplaintPage() {
 		PageFactory.initElements(driver, this);
@@ -233,48 +239,27 @@ public class AddComplaintPage extends TestBase {
 		return text;
 
 	}
+	
+	public String GetErrorMssge_InvalidTxID() {
+		String text = InvalidTxMessageWinodw.getText();
+		return text;
 
-	/*
-	 * 
-	 * public WebElement CheckMobileNoRadio() {
-	 * 
-	 * return MobileNo; }
-	 * 
-	 * public void EnterName(String usrName) { Name.sendKeys(usrName);
-	 * 
-	 * }
-	 * 
-	 * public void EnterMobile(String usrMobile) { MobileNo.sendKeys(usrMobile);
-	 * 
-	 * }
-	 * 
-	 * public void EnterEmail(String usrEmail) { Email.sendKeys(usrEmail);
-	 * 
-	 * }
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
-	 * public WebElement SelectAssign_User_Type() { return Assign_User_Type; }
-	 * 
-	 * public WebElement SelectAssign_User() { return Assign_User; }
-	 * 
-	 * public void ClickonEstimatedDate() { EstimatedDate.click(); }
-	 * 
-	 * public void MoveNextMonthINclendr() {
-	 * 
-	 * } public void MovePrevioustMonthINclendr() {
-	 * 
-	 * }
-	 * 
-	 * public WebElement ClickonUploadDoc() { return UploadDocument; }
-	 * 
-	 * 
-	 * 
-	 * public void ClickonLeftArrow() { LeftArrwoInCalendr.click(); }
-	 */
+	}
+	
+	public String GetSucessMssge_AddComplaint() {
+		String text = SucessMssge.getText();
+		return text;
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 
 }

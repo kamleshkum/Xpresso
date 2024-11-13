@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="67.249" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="253.198" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire7342411273482126880\surefirebooter-20241108122102853_3.jar C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire7342411273482126880 2024-11-08T12-21-02_620-jvmRun1 surefire-20241108122102853_1tmp surefire_0-20241108122102853_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire8575892380053715085\surefirebooter-20241111162953134_3.jar C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire8575892380053715085 2024-11-11T16-29-52_840-jvmRun1 surefire-20241111162953134_1tmp surefire_0-20241111162953134_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\eclipse-workspace\Xpresso\target\test-classes;D:\eclipse-workspace\Xpresso\target\classes;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kamlesh.kumar\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\kamlesh.kumar\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\kamlesh.kumar\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kamlesh.kumar\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.24.1\log4j-slf4j-impl-2.24.1.jar;C:\Users\kamlesh.kumar\.m2\repository\com\aventstack\extentreports\5.0.3\extentreports-5.0.3.jar;C:\Users\kamlesh.kumar\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\kamlesh.kumar\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\kamlesh.kumar\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\kamlesh.kumar\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\poi\poi\5.1.0\poi-5.1.0.jar;C:\Users\kamlesh.kumar\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\kamlesh.kumar\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\poi\poi-ooxml\5.1.0\poi-ooxml-5.1.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\poi\poi-ooxml-lite\5.1.0\poi-ooxml-lite-5.1.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\xmlbeans\xmlbeans\5.0.2\xmlbeans-5.0.2.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\kamlesh.kumar\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\poi\poi-scratchpad\5.1.0\poi-scratchpad-5.1.0.jar;C:\Users\kamlesh.kumar\.m2\repository\org\apache\commons\commons-email\1.6.0\commons-email-1.6.0.jar;C:\Users\kamlesh.kumar\.m2\repository\com\sun\mail\jakarta.mail\1.6.7\jakarta.mail-1.6.7.jar;C:\Users\kamlesh.kumar\.m2\repository\com\sun\activation\jakarta.activation\1.2.1\jakarta.activation-1.2.1.jar;C:\Users\kamlesh.kumar\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire7342411273482126880\surefirebooter-20241108122102853_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kamlesh.kumar\AppData\Local\Temp\surefire8575892380053715085\surefirebooter-20241111162953134_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.2.1+1-1"/>
@@ -57,43 +57,244 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="AddnewComplaintWithoutTXID" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="27.933">
-    <system-out><![CDATA[2024-11-08T06:51:04.054719600Z main ERROR File contains an invalid element or attribute "filePattern"
-12:21:09.853 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
-12:21:32.566 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
-12:21:34.041 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
-12:21:34.109 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
-12:21:34.812 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
-12:21:34.970 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+  <testcase name="AddnewComplaintWithoutTXID" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="30.872">
+    <system-out><![CDATA[2024-11-11T10:59:54.739151700Z main ERROR File contains an invalid element or attribute "filePattern"
+16:30:01.927 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:30:25.350 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:30:28.222 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+16:30:28.326 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+16:30:29.151 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:30:29.350 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
 Size of the Appliaction type2
 Value from the drop down is XPRESSO
-12:21:36.961 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+16:30:31.620 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
 Size of the drop down list is 33
 Value from that index is Aadhar Pay
-12:21:37.196 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
-12:21:37.475 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
-12:21:37.658 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+16:30:31.931 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+16:30:32.348 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+16:30:32.620 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
 ]]></system-out>
-    <system-err><![CDATA[Nov 08, 2024 12:21:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Nov 11, 2024 4:29:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 111
-Nov 08, 2024 12:21:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Nov 11, 2024 4:29:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="ValidateWithBlank_ApplicationType" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="27.033">
-    <system-out><![CDATA[12:21:42.147 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
-12:22:04.792 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
-12:22:06.162 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
-12:22:06.218 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
-12:22:06.902 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Advance button config page
-12:22:06.903 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
-12:22:07.057 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
-12:22:09.050 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
-12:22:09.140 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+  <testcase name="ValidateWithBlank_ApplicationType" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="28.874">
+    <system-out><![CDATA[16:30:37.935 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:31:00.610 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:31:02.048 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+16:31:02.126 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+16:31:03.022 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:31:03.221 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:31:06.637 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+16:31:06.755 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
 ]]></system-out>
-    <system-err><![CDATA[Nov 08, 2024 12:21:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Nov 11, 2024 4:30:32 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:977)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:932)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:932)
+
+Nov 11, 2024 4:30:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 111
-Nov 08, 2024 12:21:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Nov 11, 2024 4:30:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="ValidateWithBlank_CategoryType" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="28.752">
+    <system-out><![CDATA[16:31:14.001 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:31:37.003 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:31:38.735 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:31:38.823 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:31:39.719 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:31:39.886 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+Size of the Appliaction type2
+Value from the drop down is XPRESSO
+16:31:42.287 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:31:42.574 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+]]></system-out>
+    <system-err><![CDATA[Nov 11, 2024 4:31:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 111
+Nov 11, 2024 4:31:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="ValidateWithBlank_SubCategoryType" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="28.547">
+    <system-out><![CDATA[16:31:48.480 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:32:12.054 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:32:13.541 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:32:13.602 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:32:14.254 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:32:14.416 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+Size of the Appliaction type2
+Value from the drop down is XPRESSO
+16:32:16.453 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+Size of the drop down list is 33
+Value from that index is Aadhar Pay
+16:32:16.692 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+16:32:16.902 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+]]></system-out>
+    <system-err><![CDATA[Nov 11, 2024 4:31:42 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:977)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:932)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:932)
+
+Nov 11, 2024 4:31:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 111
+Nov 11, 2024 4:31:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="ValidateWithBlank_ComplaintDesc" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="27.466">
+    <system-out><![CDATA[16:32:21.425 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:32:44.084 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:32:45.394 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:32:45.468 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:32:46.113 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:32:46.261 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+Size of the Appliaction type2
+Value from the drop down is XPRESSO
+16:32:48.160 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+Size of the drop down list is 33
+Value from that index is Aadhar Pay
+16:32:48.469 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Commissions Issue Related Query
+16:32:48.780 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+]]></system-out>
+    <system-err><![CDATA[Nov 11, 2024 4:32:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 111
+Nov 11, 2024 4:32:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="AddNewComplaint_InvalidTxID" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="28.619">
+    <system-out><![CDATA[16:32:53.445 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:33:16.266 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:33:17.523 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:33:17.602 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:33:18.233 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:33:18.378 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+Size of the Appliaction type2
+Value from the drop down is XPRESSO
+16:33:20.957 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+Size of the drop down list is 33
+Value from that index is Aadhar Pay
+16:33:21.227 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+16:33:21.534 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+16:33:21.653 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:33:21.882 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+]]></system-out>
+    <system-err><![CDATA[Nov 11, 2024 4:32:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 111
+Nov 11, 2024 4:32:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="AddNewComlntwth_ValidData" classname="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" time="37.796">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;{*} Invalid Transaction Id&apos;]&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [105b89cd155fcd74eac4a27ba8a98a1a, findElement {value=//*[text()=&apos;{*} Invalid Transaction Id&apos;], using=xpath}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\KAMLES~1.KUM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64727/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 105b89cd155fcd74eac4a27ba8a98a1a" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='{*} Invalid Transaction Id']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [105b89cd155fcd74eac4a27ba8a98a1a, findElement {value=//*[text()='{*} Invalid Transaction Id'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\KAMLES~1.KUM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64727/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b89cd155fcd74eac4a27ba8a98a1a
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+	at com.xpresso.qa.pages.AddComplaintPage.GetSucessMssge_AddComplaint(AddComplaintPage.java:250)
+	at com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest.AddNewComlntwth_ValidData(Helpdesk_CspAddComplaintTest.java:207)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[16:33:26.628 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:33:49.251 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:33:50.607 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:33:50.695 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:33:51.429 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:33:51.593 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+Size of the Appliaction type2
+Value from the drop down is XPRESSO
+16:33:53.550 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+Size of the drop down list is 33
+Value from that index is Aadhar Pay
+16:33:53.781 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
+16:33:54.249 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+]]></system-out>
+    <system-err><![CDATA[Nov 11, 2024 4:33:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 111
+Nov 11, 2024 4:33:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 111.0.5563.65. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

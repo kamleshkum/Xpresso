@@ -11,8 +11,8 @@
       <class name="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest">
         <methods>
           <include name="CloseBrowser"/>
+          <include name="AddNewComlntwth_ValidData"/>
           <include name="setup"/>
-          <include name="ValidateWithBlank_ApplicationType"/>
         </methods>
       </class> <!-- com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest -->
     </classes>

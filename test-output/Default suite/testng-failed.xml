@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.xpresso.qa.testcases.HelpDesk_CspListComplaint">
+      <class name="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest">
         <methods>
           <include name="CloseBrowser"/>
-          <include name="SearchWithDefaultValue_WithinValidaterange"/>
+          <include name="AddNewComlntwth_ValidData"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.xpresso.qa.testcases.HelpDesk_CspListComplaint -->
+      </class> <!-- com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

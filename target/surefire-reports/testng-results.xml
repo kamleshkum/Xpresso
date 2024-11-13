@@ -1,37 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-08T12:21:04 IST" name="Xpresso_Test" finished-at="2024-11-08T12:22:09 IST" duration-ms="64824">
+  <suite started-at="2024-11-11T16:29:55 IST" name="Xpresso_Test" finished-at="2024-11-11T16:34:04 IST" duration-ms="249631">
     <groups>
       <group name="Sanity">
-        <method signature="Helpdesk_CspAddComplaintTest.AddnewComplaintWithoutTXID()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" name="AddnewComplaintWithoutTXID" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
-        <method signature="Helpdesk_CspAddComplaintTest.ValidateWithBlank_ApplicationType()[pri:1, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" name="ValidateWithBlank_ApplicationType" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.AddnewComplaintWithoutTXID()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="AddnewComplaintWithoutTXID" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.ValidateWithBlank_ApplicationType()[pri:1, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="ValidateWithBlank_ApplicationType" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.ValidateWithBlank_CategoryType()[pri:2, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="ValidateWithBlank_CategoryType" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.ValidateWithBlank_SubCategoryType()[pri:3, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="ValidateWithBlank_SubCategoryType" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.ValidateWithBlank_ComplaintDesc()[pri:4, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="ValidateWithBlank_ComplaintDesc" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.AddNewComplaint_InvalidTxID()[pri:5, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="AddNewComplaint_InvalidTxID" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
+        <method signature="Helpdesk_CspAddComplaintTest.AddNewComlntwth_ValidData()[pri:6, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" name="AddNewComlntwth_ValidData" class="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2024-11-08T12:21:04 IST" name="Sanity Test" finished-at="2024-11-08T12:22:09 IST" duration-ms="64824">
+    <test started-at="2024-11-11T16:29:55 IST" name="Sanity Test" finished-at="2024-11-11T16:34:04 IST" duration-ms="249631">
       <class name="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:21:04 IST" name="setup" finished-at="2024-11-08T12:21:09 IST" duration-ms="5076" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:29:55 IST" name="setup" finished-at="2024-11-11T16:30:01 IST" duration-ms="6303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AddnewComplaintWithoutTXID()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:21:09 IST" name="AddnewComplaintWithoutTXID" finished-at="2024-11-08T12:21:37 IST" duration-ms="27932" status="PASS">
+        <test-method signature="AddnewComplaintWithoutTXID()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:30:01 IST" name="AddnewComplaintWithoutTXID" finished-at="2024-11-11T16:30:32 IST" duration-ms="30870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddnewComplaintWithoutTXID -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:21:37 IST" name="CloseBrowser" finished-at="2024-11-08T12:21:37 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:30:32 IST" name="CloseBrowser" finished-at="2024-11-11T16:30:32 IST" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:21:37 IST" name="setup" finished-at="2024-11-08T12:21:42 IST" duration-ms="4218" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:30:32 IST" name="setup" finished-at="2024-11-11T16:30:37 IST" duration-ms="4938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidateWithBlank_ApplicationType()[pri:1, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:21:42 IST" name="ValidateWithBlank_ApplicationType" finished-at="2024-11-08T12:22:09 IST" duration-ms="27036" status="PASS">
+        <test-method signature="ValidateWithBlank_ApplicationType()[pri:1, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:30:37 IST" name="ValidateWithBlank_ApplicationType" finished-at="2024-11-11T16:31:06 IST" duration-ms="28872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateWithBlank_ApplicationType -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@5026735c]" started-at="2024-11-08T12:22:09 IST" name="CloseBrowser" finished-at="2024-11-08T12:22:09 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:06 IST" name="CloseBrowser" finished-at="2024-11-11T16:31:07 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:07 IST" name="setup" finished-at="2024-11-11T16:31:13 IST" duration-ms="6968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateWithBlank_CategoryType()[pri:2, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:13 IST" name="ValidateWithBlank_CategoryType" finished-at="2024-11-11T16:31:42 IST" duration-ms="28753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateWithBlank_CategoryType -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:42 IST" name="CloseBrowser" finished-at="2024-11-11T16:31:42 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:42 IST" name="setup" finished-at="2024-11-11T16:31:48 IST" duration-ms="5571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateWithBlank_SubCategoryType()[pri:3, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:31:48 IST" name="ValidateWithBlank_SubCategoryType" finished-at="2024-11-11T16:32:17 IST" duration-ms="28547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateWithBlank_SubCategoryType -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:17 IST" name="CloseBrowser" finished-at="2024-11-11T16:32:17 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:17 IST" name="setup" finished-at="2024-11-11T16:32:21 IST" duration-ms="4256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidateWithBlank_ComplaintDesc()[pri:4, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:21 IST" name="ValidateWithBlank_ComplaintDesc" finished-at="2024-11-11T16:32:48 IST" duration-ms="27466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateWithBlank_ComplaintDesc -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:48 IST" name="CloseBrowser" finished-at="2024-11-11T16:32:49 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:49 IST" name="setup" finished-at="2024-11-11T16:32:53 IST" duration-ms="4369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddNewComplaint_InvalidTxID()[pri:5, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:32:53 IST" name="AddNewComplaint_InvalidTxID" finished-at="2024-11-11T16:33:22 IST" duration-ms="28619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewComplaint_InvalidTxID -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:33:22 IST" name="CloseBrowser" finished-at="2024-11-11T16:33:22 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:33:22 IST" name="setup" finished-at="2024-11-11T16:33:26 IST" duration-ms="4354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddNewComlntwth_ValidData()[pri:6, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:33:26 IST" name="AddNewComlntwth_ValidData" finished-at="2024-11-11T16:34:04 IST" duration-ms="37786" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='{*} Invalid Transaction Id']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [105b89cd155fcd74eac4a27ba8a98a1a, findElement {value=//*[text()='{*} Invalid Transaction Id'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\KAMLES~1.KUM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64727/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b89cd155fcd74eac4a27ba8a98a1a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='{*} Invalid Transaction Id']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [105b89cd155fcd74eac4a27ba8a98a1a, findElement {value=//*[text()='{*} Invalid Transaction Id'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\KAMLES~1.KUM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64727/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b89cd155fcd74eac4a27ba8a98a1a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy27.getText(Unknown Source)
+at com.xpresso.qa.pages.AddComplaintPage.GetSucessMssge_AddComplaint(AddComplaintPage.java:250)
+at com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest.AddNewComlntwth_ValidData(Helpdesk_CspAddComplaintTest.java:207)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewComlntwth_ValidData -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest@1672fe87]" started-at="2024-11-11T16:34:04 IST" name="CloseBrowser" finished-at="2024-11-11T16:34:04 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

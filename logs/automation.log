@@ -3264,3 +3264,652 @@
 12:22:07.057 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
 12:22:09.050 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
 12:22:09.140 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+17:29:17.033 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+17:29:39.653 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+17:29:41.442 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+17:29:41.509 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+17:29:42.420 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+17:29:42.582 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+17:29:44.801 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+17:29:45.057 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+17:29:45.333 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+17:29:45.524 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+17:29:51.050 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+17:30:13.645 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+17:30:15.398 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+17:30:15.462 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+17:30:16.175 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Advance button config page
+17:30:16.175 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+17:30:16.339 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+17:30:18.206 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+17:30:18.295 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+11:32:06.814 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+11:32:29.551 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:32:31.171 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+11:32:31.237 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+11:32:32.118 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:32:32.270 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+11:32:34.304 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+11:32:34.563 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+11:32:34.833 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+11:32:35.028 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+11:32:40.370 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+11:33:02.824 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:33:04.247 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+11:33:04.331 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+11:33:05.055 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:33:05.217 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+11:33:07.069 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+11:33:07.164 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+11:33:11.491 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:33:34.096 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:33:35.674 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:33:35.739 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+11:33:36.441 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+11:33:59.018 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:34:21.129 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:34:22.933 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:34:23.041 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+11:34:23.720 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+11:34:38.257 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:35:00.477 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:35:02.305 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:35:02.372 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:35:03.072 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:35:18.009 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:35:40.764 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:35:42.202 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:35:42.270 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:35:43.006 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:39:47.441 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+11:40:10.114 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:40:11.580 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+11:40:11.642 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+11:40:12.260 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:40:12.442 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+11:40:14.335 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+11:40:14.640 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+11:40:14.934 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+11:40:15.127 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+11:40:19.807 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+11:40:42.521 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:40:43.892 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+11:40:43.954 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+11:40:44.718 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:40:44.868 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+11:40:47.023 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+11:40:47.114 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+11:40:51.319 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:41:13.680 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:41:15.074 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:41:15.133 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+11:41:15.811 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:41:16.004 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+11:41:18.273 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+11:41:18.515 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+11:41:22.963 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:41:45.599 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:41:47.067 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:41:47.126 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+11:41:47.796 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:41:47.949 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+11:41:50.028 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+11:41:50.275 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+11:41:50.488 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+11:41:57.957 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:42:20.685 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:42:22.367 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:42:22.439 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:42:23.091 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:42:23.240 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:42:25.118 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+11:42:25.358 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+11:42:25.627 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+11:42:40.246 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:43:02.758 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:43:04.239 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:43:04.304 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:43:04.957 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:43:05.101 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:43:06.999 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+11:43:07.238 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+11:43:07.492 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+12:22:02.556 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:22:25.358 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:22:26.997 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+12:22:27.066 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+12:22:28.096 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:22:28.266 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+12:22:30.358 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+12:22:30.679 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+12:22:30.985 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+12:22:31.222 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+12:22:35.887 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+12:22:58.715 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:23:00.860 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+12:23:00.928 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+12:23:01.691 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:23:01.848 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+12:23:04.394 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+12:23:04.490 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+12:23:09.368 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+12:23:31.787 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:23:33.161 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+12:23:33.230 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+12:23:33.912 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:23:34.068 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+12:23:36.323 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+12:23:36.613 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+12:23:41.287 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+12:24:03.947 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:24:05.733 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+12:24:05.801 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+12:24:06.474 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:24:06.644 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+12:24:08.717 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+12:24:08.971 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+12:24:09.210 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+12:24:13.828 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+12:24:36.211 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:24:37.957 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+12:24:38.035 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+12:24:38.708 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:24:38.882 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+12:24:41.145 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+12:24:41.402 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+12:24:41.709 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+12:24:46.912 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+12:25:09.229 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+12:25:10.777 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+12:25:10.855 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+12:25:11.636 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+12:25:11.775 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+12:25:13.920 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+12:25:14.223 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+12:25:14.518 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+15:13:46.077 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:14:09.281 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:14:11.455 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+15:14:11.574 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+15:14:12.385 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:14:12.579 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+15:14:15.607 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+15:14:15.904 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+15:14:16.294 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+15:14:16.544 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+15:14:21.675 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:14:45.086 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:14:47.072 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+15:14:47.151 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+15:14:48.258 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:14:48.468 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:14:50.681 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:14:50.790 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+15:14:55.504 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:15:18.092 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:15:19.951 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:15:20.045 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:15:20.845 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:15:21.035 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:15:23.441 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:15:23.709 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+15:15:28.601 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:15:51.576 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:15:53.801 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:15:53.873 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:15:54.856 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:15:55.038 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:15:57.592 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+15:15:57.987 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+15:15:58.332 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:16:03.594 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:16:26.775 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:16:29.157 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:16:29.268 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:16:30.125 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:16:30.301 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:16:32.554 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:16:32.841 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:16:33.204 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:16:39.297 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:17:02.781 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:17:04.751 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:17:04.884 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:17:05.765 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:17:05.973 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:17:08.141 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:17:08.496 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:17:08.837 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+15:17:08.991 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:17:09.297 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:28:29.265 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:28:51.983 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:28:54.112 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+15:28:54.237 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+15:28:55.251 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:28:55.434 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+15:28:58.129 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+15:28:58.506 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+15:28:58.906 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+15:28:59.170 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+15:29:04.514 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:29:27.839 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:29:31.409 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+15:29:31.539 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+15:29:32.624 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:29:32.908 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:29:35.151 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:29:35.286 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+15:29:40.248 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:30:03.966 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:30:06.503 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:30:06.608 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:30:07.459 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:30:07.731 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:30:10.167 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:30:10.422 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+15:30:16.007 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:30:39.193 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:30:41.455 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:30:41.556 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:30:42.467 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:30:42.657 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:30:45.151 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+15:30:45.481 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+15:30:45.722 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:30:52.022 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:31:15.255 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:31:17.317 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:31:17.452 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:31:18.343 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:31:18.589 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:31:21.125 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:31:21.629 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:31:22.063 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:31:27.312 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:31:51.261 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:31:53.860 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:31:53.972 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:31:54.808 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:31:55.000 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:31:57.431 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:31:57.825 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:31:58.202 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+15:31:58.331 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:31:58.719 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:43:13.024 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.037 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+15:43:13.040 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.041 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.044 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.045 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.047 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.047 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.048 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.049 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.050 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.052 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.054 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.055 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.057 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.059 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.071 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+15:43:13.087 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+15:43:13.090 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.094 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+15:43:13.097 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.098 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.100 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.100 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.111 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+15:43:13.112 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.114 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.115 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.115 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:43:13.115 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:43:13.137 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kamlesh.kumar\AppData\Local\Temp\testng-eclipse-1937571556\testng-customsuite.xml
+
+15:43:13.585 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 7 ms.
+15:43:20.479 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:43:44.338 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:43:46.352 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:43:46.430 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:43:47.187 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:43:47.382 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:43:49.806 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:43:50.229 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:43:50.648 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+15:43:50.818 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:43:51.112 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:43:53.231 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@446626a7: 54 ms
+15:43:53.542 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@33956d1a: 311 ms
+15:43:53.543 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@2e1ddc90: 0 ms
+15:43:53.553 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@f5b6e78: 9 ms
+15:43:53.567 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@21ba2445: 14 ms
+15:43:53.583 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@16a9eb2e: 16 ms
+15:43:53.596 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@76332405: 2 ms
+15:44:56.903 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:45:19.773 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:45:21.800 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+15:45:21.900 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+15:45:22.799 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:45:23.008 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+15:45:25.982 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+15:45:26.311 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+15:45:26.731 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+15:45:27.009 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+15:45:32.254 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+15:45:55.736 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:45:58.250 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+15:45:58.331 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+15:45:59.276 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:45:59.463 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:46:02.829 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:46:02.987 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+15:46:07.903 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:46:31.644 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:46:33.493 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:46:33.609 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:46:34.368 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:46:34.558 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:46:36.817 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:46:37.088 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+15:46:42.163 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:47:05.120 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:47:06.762 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:47:06.839 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+15:47:07.683 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:47:07.871 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+15:47:10.130 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+15:47:10.490 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+15:47:10.777 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+15:47:16.669 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:47:40.347 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:47:42.334 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:47:42.452 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:47:43.253 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:47:43.478 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:47:45.676 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:47:46.025 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:47:46.463 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+15:47:52.372 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+15:48:15.935 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+15:48:17.739 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+15:48:17.882 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+15:48:18.905 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+15:48:19.096 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+15:48:21.264 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+15:48:21.619 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+15:48:21.967 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+15:48:22.170 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+15:48:22.525 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:30:01.927 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:30:25.350 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:30:28.222 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+16:30:28.326 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+16:30:29.151 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:30:29.350 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+16:30:31.620 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+16:30:31.931 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+16:30:32.348 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+16:30:32.620 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+16:30:37.935 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:31:00.610 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:31:02.048 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+16:31:02.126 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+16:31:03.022 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:31:03.221 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:31:06.637 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+16:31:06.755 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+16:31:14.001 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:31:37.003 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:31:38.735 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:31:38.823 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:31:39.719 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:31:39.886 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+16:31:42.287 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:31:42.574 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+16:31:48.480 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:32:12.054 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:32:13.541 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:32:13.602 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:32:14.254 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:32:14.416 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+16:32:16.453 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+16:32:16.692 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+16:32:16.902 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+16:32:21.425 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:32:44.084 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:32:45.394 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:32:45.468 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:32:46.113 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:32:46.261 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:32:48.160 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:32:48.469 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Commissions Issue Related Query
+16:32:48.780 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:32:53.445 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:33:16.266 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:33:17.523 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:33:17.602 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:33:18.233 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:33:18.378 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:33:20.957 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:33:21.227 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+16:33:21.534 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+16:33:21.653 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:33:21.882 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:33:26.628 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:33:49.251 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:33:50.607 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:33:50.695 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:33:51.429 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:33:51.593 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:33:53.550 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:33:53.781 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
+16:33:54.249 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:38:40.643 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.651 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+16:38:40.653 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.654 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.655 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.656 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.657 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.658 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.659 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.660 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.660 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.661 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.663 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.664 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.664 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.666 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.677 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+16:38:40.689 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+16:38:40.691 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.692 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.694 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.694 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.695 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.695 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.698 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.702 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+16:38:40.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.704 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:38:40.705 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:38:40.716 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kamlesh.kumar\AppData\Local\Temp\testng-eclipse-1624691837\testng-customsuite.xml
+
+16:38:41.039 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+16:38:48.851 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:39:11.714 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:39:13.505 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk module
+16:39:13.569 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint tab
+16:39:14.651 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:39:14.803 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type
+16:39:17.008 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type 
+16:39:17.311 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category type 
+16:39:17.596 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description 
+16:39:17.797 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button 
+16:39:22.301 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter csp id, password and captcha
+16:39:44.445 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:39:46.295 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on HELPDESK
+16:39:46.354 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add complaint
+16:39:47.057 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:39:47.202 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:39:49.110 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+16:39:49.195 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Assert with proper Verification Message
+16:39:56.857 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:40:18.995 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:40:20.402 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:40:20.463 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:40:21.122 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:40:21.270 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+16:40:23.229 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:40:23.450 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Clic on Save button
+16:40:28.969 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:40:51.167 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:40:52.520 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:40:52.588 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint Tab
+16:40:53.432 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:40:53.584 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as Xpresso
+16:40:56.316 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay
+16:40:56.612 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter description
+16:40:56.823 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save Button
+16:41:01.827 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:41:24.178 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:41:26.129 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:41:26.211 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:41:27.024 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:41:27.180 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:41:33.009 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:41:33.319 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Commissions Issue Related Query
+16:41:33.758 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:41:38.734 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:42:00.861 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:42:02.234 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:42:02.294 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:42:02.945 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:42:03.089 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:42:05.208 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:42:05.622 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category Transaction Issue Related Query
+16:42:06.024 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Transaction ID
+16:42:06.150 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter Description
+16:42:06.390 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:42:10.938 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+16:42:33.672 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+16:42:35.288 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+16:42:35.344 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+16:42:36.020 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+16:42:36.169 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+16:42:39.023 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+16:42:39.305 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
+16:42:39.790 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+16:42:41.879 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@27ffd9f8: 29 ms
+16:42:41.971 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@687eb455: 91 ms
+16:42:42.021 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@554566a8: 49 ms
+16:42:42.154 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@17176b18: 129 ms
+16:42:42.164 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@423f8a73: 9 ms
+16:42:42.172 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3f866f50: 8 ms
+16:42:42.173 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@5844a2d1: 0 ms
+11:19:57.650 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.658 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+11:19:57.661 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.663 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.665 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.665 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.668 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.668 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.669 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.669 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.672 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.672 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.674 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.674 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.675 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.676 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.685 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+11:19:57.696 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+11:19:57.699 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+11:19:57.700 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.703 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.706 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.708 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.709 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.710 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.711 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:19:57.711 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:19:57.724 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kamlesh.kumar\AppData\Local\Temp\testng-eclipse--2132745205\testng-customsuite.xml
+
+11:19:58.094 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+11:20:03.913 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:20:26.823 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:20:28.738 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:20:28.812 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:20:29.563 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:20:29.715 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:20:31.659 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+11:20:31.973 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
+11:20:32.451 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Save button
+11:20:34.860 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@432f521f: 23 ms
+11:20:35.065 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@d1d8e1a: 205 ms
+11:20:35.132 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@47d023b7: 66 ms
+11:20:35.152 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@71e35c4: 20 ms
+11:20:35.165 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@625a4ff: 13 ms
+11:20:35.174 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@27755487: 9 ms
+11:20:35.175 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4f0cab0a: 1 ms
+11:25:16.824 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+11:25:16.834 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+11:25:16.837 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.838 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.839 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.840 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.842 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.842 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.843 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.844 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.846 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.848 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.849 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.850 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.852 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.853 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.863 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+11:25:16.873 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
+11:25:16.876 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.876 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.878 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.879 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.879 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.879 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.883 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.885 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.887 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.887 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.887 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+11:25:16.887 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+11:25:16.897 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kamlesh.kumar\AppData\Local\Temp\testng-eclipse-1678246845\testng-customsuite.xml
+
+11:25:17.201 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+11:25:22.374 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+11:25:46.393 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter OTP
+11:25:48.258 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Help Desk
+11:25:48.340 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Click on Add Complaint
+11:25:50.728 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Validate Authentication page
+11:25:50.914 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Application type as XPRESSO
+11:25:53.687 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Select Category type as Aadhar Pay 
+11:25:56.895 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@3f1ed068: 21 ms
+11:25:57.126 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2264ea32: 231 ms
+11:25:57.177 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@1f53481b: 51 ms
+11:25:57.189 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@70730db: 11 ms
+11:25:57.199 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@424de326: 10 ms
+11:25:57.224 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@671c4166: 24 ms
+11:25:57.226 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@53d13cd4: 0 ms
+10:37:58.907 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+10:38:21.107 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha

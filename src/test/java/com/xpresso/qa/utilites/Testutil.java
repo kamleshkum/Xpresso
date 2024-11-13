@@ -33,16 +33,24 @@ public class Testutil extends TestBase {
 	static JavascriptExecutor js;
 
 	
-   // Explicit Wait ElementVisiblity
+   // Explicit Wait Element Visible
 	public void ExplictWait_ElementVisiblity(int duartion, WebElement loactor) {
 		WebDriverWait  WebWait=new WebDriverWait(driver,Duration.ofSeconds(duartion));
 		WebWait.until(ExpectedConditions.visibilityOf(loactor));
 	}
 	
-	// Explicit Wait ElementVisiblity
+	// Explicit Wait Element Clickable 
 		public void ExplictWait_ElementClickable(int duartion, WebElement loactor) {
 			WebDriverWait  WebWait=new WebDriverWait(driver,Duration.ofSeconds(duartion));
 			WebWait.until(ExpectedConditions.elementToBeClickable(loactor));
+		}
+	
+	// Explicit wait for Alert present
+		
+		public void ExplictWait_AlertPresent(int duartion) {
+			
+			WebDriverWait  WebWait=new WebDriverWait(driver,Duration.ofSeconds(duartion));
+			WebWait.until(ExpectedConditions.alertIsPresent());
 		}
 	
 	

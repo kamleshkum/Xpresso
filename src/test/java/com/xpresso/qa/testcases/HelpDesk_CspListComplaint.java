@@ -26,10 +26,9 @@ public class HelpDesk_CspListComplaint extends TestBase {
 		Hmpage = new HomePage();
 		ListCmplntPage = new ListComplaintPage();
 		authPage = new AuthenticationPage();
-
 	}
 
-	@Test
+	@Test (priority=0,groups= {"Sanity"})
 	public void SearchWithDefaultValue_WithinValidaterange() {
 		loger.info("Enter CSP code, Passwor and Captcha");
 		Lginpage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
@@ -50,7 +49,7 @@ public class HelpDesk_CspListComplaint extends TestBase {
 
 	}
 
-	@AfterMethod(enabled=false)
+	@AfterMethod()
 	public void CloseBrowser() {
 		TearDown();
 	}
