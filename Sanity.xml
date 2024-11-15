@@ -10,7 +10,8 @@
 	
 	<test name="Sanity Test">
 		<classes>
-			<class name="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest" />
+			<class name="com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest" />
+			<class name="com.xpresso.qa.testcases.helpdesk.CspListComplaintTest" />
 
 		</classes>
 	</test>

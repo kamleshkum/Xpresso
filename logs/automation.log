@@ -3913,3 +3913,13 @@
 11:25:57.226 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@53d13cd4: 0 ms
 10:37:58.907 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
 10:38:21.107 [main] INFO  com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest - Enter CSP id, Password and Captcha
+21:48:10.779 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Enter CSP id, Password and Captcha
+21:48:33.538 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Enter OTP
+21:48:35.800 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Click on Help Desk
+21:48:35.880 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Click on Add Complaint
+21:48:37.832 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Validate Authentication page
+21:48:38.021 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Select Application type as XPRESSO
+21:48:47.257 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Select Category type as Aadhar Pay 
+21:48:47.792 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
+21:48:48.628 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Click on Save button
+21:48:50.290 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspListComplaintTest - Enter CSP code, Passwor and Captcha
