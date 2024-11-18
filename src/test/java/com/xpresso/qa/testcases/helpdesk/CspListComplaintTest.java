@@ -11,7 +11,7 @@ import com.xpresso.qa.pages.helpdesk.ListComplaintPage;
 import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
 
-@Listeners(com.xpresso.qa.extentReportListner.ExtentReport.class)
+@Listeners(com.xpresso.qa.ExtentReportListner.ExtentReport.class)
 public class CspListComplaintTest extends TestBase {
 
 	LoginPage Lginpage;

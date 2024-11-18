@@ -3923,3 +3923,9 @@
 21:48:47.792 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Select Sub Category as Commissions Issue Related Query
 21:48:48.628 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest - Click on Save button
 21:48:50.290 [main] INFO  com.xpresso.qa.testcases.helpdesk.CspListComplaintTest - Enter CSP code, Passwor and Captcha
+09:57:12.004 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Enter csp id, password and captcha
+09:57:34.279 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Enter OTP
+09:57:35.930 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Click on Help Desk module
+10:02:25.651 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Enter csp id, password and captcha
+10:02:47.918 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Enter OTP
+10:02:49.122 [main] INFO  CareInsurance.Test.CalculatePremiumErrorMessageTest1 - Click on Help Desk module

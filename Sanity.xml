@@ -8,10 +8,10 @@
 		</run>
 	</groups>
 	
-	<test name="Sanity Test">
+		<test name="Sanity Test 1">
 		<classes>
-			<class name="com.xpresso.qa.testcases.helpdesk.CspAddComplaintTest" />
-			<class name="com.xpresso.qa.testcases.helpdesk.CspListComplaintTest" />
+			<class name="CareInsurance.Test.CalculatePremiumErrorMessageTest1"></class>
+
 
 		</classes>
 	</test>

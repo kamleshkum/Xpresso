@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
@@ -23,7 +24,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(
-					"D:\\eclipse-workspace\\Xpresso\\src\\main\\resources\\config.properties");
+					"C:/Users/rohit.mathur/Roinet/Xpresso/src/main/resources/config.properties");
 			try {
 				prop.load(fis);
 			} catch (IOException e) {
@@ -39,8 +40,10 @@ public class TestBase {
 	public static void Browserintialize(String browsername, String url) {
 
 		if (browsername.equalsIgnoreCase("chrome")) {
-
-			driver = new ChromeDriver();
+		    
+		    ChromeOptions chromeOptions = new ChromeOptions();
+		    chromeOptions.addArguments("--ignore-certificate-errors");
+			driver = new ChromeDriver(chromeOptions);
 
 		} else if (browsername.equalsIgnoreCase("firefox")) {
 

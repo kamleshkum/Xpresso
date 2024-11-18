@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest">
+      <class name="CareInsurance.Test.CalculatePremiumErrorMessageTest1">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="AddNewComlntwth_ValidData"/>
           <include name="setup"/>
+          <include name="calculatePremiumError"/>
         </methods>
-      </class> <!-- com.xpresso.qa.testcases.Helpdesk_CspAddComplaintTest -->
+      </class> <!-- CareInsurance.Test.CalculatePremiumErrorMessageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

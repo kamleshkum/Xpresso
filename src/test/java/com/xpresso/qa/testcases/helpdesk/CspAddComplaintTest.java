@@ -12,7 +12,7 @@ import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
 import com.xpresso.qa.utilites.Testutil;
 
-@Listeners(com.xpresso.qa.extentReportListner.ExtentReport.class)
+@Listeners(com.xpresso.qa.ExtentReportListner.ExtentReport.class)
 public class CspAddComplaintTest extends TestBase {
 
 	LoginPage Lginpage;
