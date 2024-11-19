@@ -29,6 +29,7 @@ public class CIMandatoryMsgPOM {
   private final By periodMan = By.xpath("//div[@class='row mt-1']/form/div/div[4]//div[@class='invalid-feedback']");
   private final By productMan = By.xpath("//div[@class='row mt-1']/form/div/div[5]//div[@class='invalid-feedback']");
   private final By insuranceTypeMan = By.xpath("//div[@class='row mt-1']/form/div/div[6]//div[@class='invalid-feedback']");
+
   //PROPOSER MANDATORY MESSAGE//
   private final By proposerDetailButton = By.xpath("//button[contains(.,'Proposer Detail')]");
   private final By proposerDobMan = By.xpath("//div[@id='accordionExample']/div[1]//div[@class='row pt-2']/div[1]//div[@class='text-danger']");

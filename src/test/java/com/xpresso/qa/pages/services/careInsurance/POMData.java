@@ -1,7 +1,7 @@
 package com.xpresso.qa.pages.services.careInsurance;
 
 import org.openqa.selenium.WebDriver;
-import java.util.Properties;
+
 
 
 public class POMData {
