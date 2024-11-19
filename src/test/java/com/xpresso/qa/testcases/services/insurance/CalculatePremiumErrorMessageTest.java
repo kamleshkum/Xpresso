@@ -1,19 +1,18 @@
-package CareInsurance.Test;
+package com.xpresso.qa.testcases.services.insurance;
 
-import CareInsurance.Main.BaseClassUAT;
-import CareInsurance.Main.POMData;
-import CareInsurance.Main.TestUtility;
+import com.xpresso.qa.pages.services.careInsurance.BaseClassUAT;
+import com.xpresso.qa.pages.services.careInsurance.POMData;
+import com.xpresso.qa.pages.services.careInsurance.TestUtility;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.sql.SQLException;
 import java.util.Random;
 
-@Listeners(com.xpresso.qa.ExtentReportListner.ExtentReport.class)
 public class CalculatePremiumErrorMessageTest extends BaseClassUAT {
   TestUtility u=new TestUtility();
+  POMData pomData=new POMData();
   String usernameAdmin;
   String passwordAdmin;
 //  int max = 99999999;
@@ -40,7 +39,7 @@ public class CalculatePremiumErrorMessageTest extends BaseClassUAT {
   String lname = "trtyt";
   String gend = "Male";
   String rel = "SELF";
-  String tit = "Ms.";
+  String tit = "Mrs.";
   String add1 = "poipoo ouwep pipi pi";
   String add2 = "trteyr erwerwiiu uiuiuiui";
   String area = "trte rtertert rtrwwwt";
@@ -48,9 +47,8 @@ public class CalculatePremiumErrorMessageTest extends BaseClassUAT {
   String city = "Gurgaon";
   String pincode = "122012";
   String propEmail = "pouipi@cwewrc.in";
-  
-  
-  @BeforeClass(groups= {"Sanity"})
+
+  @BeforeClass
   public void initiate() throws SQLException {
     //pomData.enterCredentials();
     usernameAdmin = getProperty("usernameCSP");
@@ -61,12 +59,12 @@ public class CalculatePremiumErrorMessageTest extends BaseClassUAT {
   }
 
  
-  
-  @Test(priority = 1, testName = "gender mismatch error message verify",groups= {"Sanity"})
+
+  @Test(priority = 2, testName = "gender mismatch error message verify")
   public void calculatePremiumError() throws SQLException {
     System.out.println("this is the mobile number: "+mobileNumber);
     CImain(mobileNumber);
-    cipom.enterFirstPart(coverType, sinsure[sinsuIndex], numberOfMembers, InsuPeriod
+    cipom.enterFirstPart("Individual", sinsure[sinsuIndex], numberOfMembers, InsuPeriod
           , InsuProduct, InsuType, nomineeName, nomineeRelation[nomineeRelIndex]);
     cipom.proposerDetailEnter(year, month, date, fname, lname, gend, rel, tit);
     cipom.enterProposerPermanentAddress(add1, add2, area, state,
@@ -75,10 +73,11 @@ public class CalculatePremiumErrorMessageTest extends BaseClassUAT {
     cipom.openInsuredBlock();
     cipom.addInsured();
     cipom.calculatePremiumClick();
-    cipom.genderMismatch("{*} Gender and title mismatch..");
+    cipom.genderMismatch("{*} Gender and title mismatch.");
   }
 
-	/*
-	 * @AfterTest public void quit(){ driverUAT.quit(); }
-	 */
+  @AfterTest
+  public void quit(){
+    driverUAT.quit();
+  }
 }

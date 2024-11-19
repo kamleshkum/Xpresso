@@ -1,4 +1,4 @@
-package CareInsurance.Main;
+package com.xpresso.qa.pages.services.careInsurance;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

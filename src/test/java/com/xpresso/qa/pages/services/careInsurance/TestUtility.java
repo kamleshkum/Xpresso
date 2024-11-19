@@ -1,4 +1,4 @@
-package CareInsurance.Main;
+package com.xpresso.qa.pages.services.careInsurance;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
