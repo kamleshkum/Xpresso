@@ -153,10 +153,6 @@ public class FormValidationNew extends TestBase {
     public void CIformValidationProposerPerPart() {
 	Reporter.log("proposer part");
 	String[] proposerPermanentMessage = ciMainPOM.ProposerMandatoryPermanentAddress();
-	System.out.println("lets see the data " + proposerPermanentMessage[0]);
-	System.out.println("lets see the data " + proposerPermanentMessage[1]);
-	System.out.println("lets see the data " + proposerPermanentMessage[2]);
-	System.out.println("lets see the data " + proposerPermanentMessage[3]);
 	softAssert.assertEquals("Address Line1 is required", proposerPermanentMessage[0],
 		"proposer address line message does not match. Expected: Address Line1 is required. Actual: "
 			+ proposerPermanentMessage[0]);
