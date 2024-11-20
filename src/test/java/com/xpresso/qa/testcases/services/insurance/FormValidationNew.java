@@ -2,6 +2,7 @@ package com.xpresso.qa.testcases.services.insurance;
 
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -15,6 +16,7 @@ import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM;
 
 import com.xpresso.qa.pages.services.careInsurance.CIResultPage;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
+import com.xpresso.qa.utilites.ExcelUtility;
 import com.xpresso.qa.utilites.Testutil;
 
 import java.sql.ResultSet;
@@ -22,34 +24,7 @@ import java.sql.SQLException;
 
 public class FormValidationNew extends TestBase {
 
-    int max = 99999999;
-    int min = 10000000;
-
-    int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
-    String mobilenumber = "7" + randomWithMathRandom + "7";
-    String year = "1993";
-    String month = "Sep";
-    String date = "12";
-    String firstname = "cdcdc";
-    String lastname = "scdsdcf";
-    String title = "Mr.";
-    String gend = "Male";
-    String rel = "SELF";
-    String add1 = "adsda";
-    String add2 = "eyoe";
-    String area = "oioydos";
-    String pstate = "Delhi &";
-    String pcity = "Gurgaon";
-    String ppincode = "122012";
-    String propEmail = "acdo@cdoicuc.in";
-    String cType = "Family Floater";
-    String sInsu = "50K";
-    String InsurancePeriod = "1Y";
-    String nMember = "2";
-    String InsuranceProduct = "Group Care 360°(ROINET)-GMC";
-    String Itype = "Health Insurance";
-    String nName = "sioc";
-    String nRelation = "SON";
+   
     CIResultPage ciResultPage;
     CIMobileOTPPOM ciMobileOTPPOM;
     CIMainPOM ciMainPOM;
@@ -59,8 +34,13 @@ public class FormValidationNew extends TestBase {
     AddComplaintPage CmplntPage;
     Testutil util;
     AuthenticationPage authpge;
+    // Specify the path to your Excel file
+    String excelFilePath = "C:\\Users\\rohit.mathur\\Roinet\\Xpresso\\src\\test\\java\\com\\xpresso\\qa\\testdata\\Xpresso_TestData.xlsx";
 
-    @BeforeClass
+    // Instantiate the ExcelUtility class
+    ExcelUtility excelUtility;
+
+    @BeforeClass(groups = { "Sanity" })
     public void initiate() throws SQLException {
 	Browserintialize(prop.getProperty("browser"), prop.getProperty("Xpressourl"));
 	Lginpage = new LoginPage();
@@ -74,12 +54,16 @@ public class FormValidationNew extends TestBase {
 	ciResultPage = new CIResultPage(driver);
 	ciMobileOTPPOM = new CIMobileOTPPOM(driver);
 	softAssert = new SoftAssert();
-	
-	
+	excelUtility = new ExcelUtility(excelFilePath);
+
     }
 
-    @Test(priority = 1)
-    public void CIformValidationFirstPart() throws SQLException {
+    @Test(priority = 1, groups = { "Sanity" })
+    public void ciBasicformValidation() throws SQLException {
+	 int max = 99999999;
+	    int min = 10000000;
+	    int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
+	    String mobilenumber = "8" + randomWithMathRandom + "7";
 	loger.info("Enter csp id, password and captcha");
 	Lginpage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
 	loger.info("Enter OTP");
@@ -122,8 +106,8 @@ public class FormValidationNew extends TestBase {
 	softAssert.assertAll();
     }
 
-    @Test(priority = 3)
-    public void CIformValidationProposerFirstPart() {
+    @Test(priority = 3, groups = { "Sanity" })
+    public void ciformValidationProposerFirstPart() {
 	Reporter.log("proposer part");
 	String[] proposerFirstPartMandateVerify = ciMainPOM.ProposerMandatoryFirstPartVerify();
 
@@ -149,8 +133,8 @@ public class FormValidationNew extends TestBase {
 
     }
 
-    @Test(priority = 4)
-    public void CIformValidationProposerPerPart() {
+    @Test(priority = 4, groups = { "Sanity" })
+    public void ciformValidationProposerPerPart() {
 	Reporter.log("proposer part");
 	String[] proposerPermanentMessage = ciMainPOM.ProposerMandatoryPermanentAddress();
 	softAssert.assertEquals("Address Line1 is required", proposerPermanentMessage[0],
@@ -168,8 +152,8 @@ public class FormValidationNew extends TestBase {
 	softAssert.assertAll();
     }
 
-    @Test(priority = 5)
-    public void CIformValidationProposerCommPart() {
+    @Test(priority = 5, groups = { "Sanity" })
+    public void ciformValidationProposerCommPart() {
 	Reporter.log("proposer part");
 	String[] proposerCommunicationMesssage = ciMainPOM.ProposerMandatoryCommunicationAddress();
 	softAssert.assertEquals("Address Line1 is required", proposerCommunicationMesssage[0]);
@@ -181,12 +165,48 @@ public class FormValidationNew extends TestBase {
 
     }
 
-    @Test(priority = 6)
-    public void CIformValidationInsuredFirstPart() {
+   
+    @Test(priority = 6, groups = { "Sanity" })
+    public void ciformValidationInsuredFirstPart() {
 	ciMainPOM.goToHomeAction();
-	ciMainPOM.enterFirstPart(cType, sInsu, nMember, InsurancePeriod, InsuranceProduct, Itype, nName, nRelation);
-	ciMainPOM.proposerDetailEnter(year, month, date, firstname, lastname, gend, rel, title);
-	ciMainPOM.enterProposerPermanentAddress(add1, add2, area, pstate, pcity, ppincode, propEmail);
+	try {
+	    // Example 1: Get the row count of a specific sheet
+	    String sheetName = "CareInsurance"; 
+	    String cTypeValue = excelUtility.getCellData(sheetName, 16, 1);
+	    String sumInsured = excelUtility.getCellData(sheetName, 17, 1);
+	    String insurancePeriod = excelUtility.getCellData(sheetName, 18, 1);
+	    String numberMember = excelUtility.getCellData(sheetName, 19, 1);
+	    String insuranceProduct = excelUtility.getCellData(sheetName, 20, 1);
+	    String insuranceType = excelUtility.getCellData(sheetName, 21, 1);
+	    String nomineeName = excelUtility.getCellData(sheetName, 22, 1);
+	    String nomineeRel = excelUtility.getCellData(sheetName, 23, 1);
+
+	    String year = excelUtility.getCellData(sheetName, 1, 1);
+	    String month = excelUtility.getCellData(sheetName, 2, 1);
+	    String date = excelUtility.getCellData(sheetName, 3, 1);
+	    String firstname = excelUtility.getCellData(sheetName, 4, 1);
+	    String lastname = excelUtility.getCellData(sheetName, 5, 1);
+	    String title = excelUtility.getCellData(sheetName, 6, 1);
+	    String gend = excelUtility.getCellData(sheetName, 7, 1);
+	    String rel = excelUtility.getCellData(sheetName, 8, 1);
+
+	    String add1 = excelUtility.getCellData(sheetName, 9, 1);
+	    String add2 = excelUtility.getCellData(sheetName, 10, 1);
+	    String area = excelUtility.getCellData(sheetName, 11, 1);
+	    String pstate = excelUtility.getCellData(sheetName, 12, 1);
+	    String pcity = excelUtility.getCellData(sheetName, 13, 1);
+	    String ppincode = excelUtility.getCellData(sheetName, 14, 1);
+	    String propEmail = excelUtility.getCellData(sheetName, 15, 1);
+
+	    ciMainPOM.enterFirstPart(cTypeValue, sumInsured, numberMember, insurancePeriod, insuranceProduct,
+		    insuranceType, nomineeName, nomineeRel);
+	    ciMainPOM.proposerDetailEnter(year, month, date, firstname, lastname, gend, rel, title);
+	    ciMainPOM.enterProposerPermanentAddress(add1, add2, area, pstate, pcity, ppincode, propEmail);
+	} catch (Exception e) {
+	    System.out.println("check this error because of excel upload" + e.getMessage());
+
+	}
+
 	ciMainPOM.ProposercheckboxPermCommSame();
 	ciMainPOM.openInsuredBlock();
 	ciMainPOM.addInsured();
@@ -203,8 +223,8 @@ public class FormValidationNew extends TestBase {
 
     }
 
-    @Test(priority = 7)
-    public void CIformValidationInsuredPerPart() {
+    @Test(priority = 7, groups = { "Sanity" })
+    public void ciformValidationInsuredPerPart() {
 	Reporter.log("insured premanent address part");
 	String[] insuredPermanentMessage = ciMainPOM.InsuredMandatoryPermanentAddress();
 	softAssert.assertEquals("Address Line1 is required", insuredPermanentMessage[0]);
@@ -215,8 +235,8 @@ public class FormValidationNew extends TestBase {
 
     }
 
-    @Test(priority = 8)
-    public void CIformValidationInsuredCommPart() {
+    @Test(priority = 8, groups = { "Sanity" })
+    public void ciformValidationInsuredCommPart() {
 	Reporter.log("insured comm part");
 	String[] insuredCommunicationMessage = ciMainPOM.InsuredMandatoryCommunicationAddress();
 	softAssert.assertEquals("Address Line1 is required", insuredCommunicationMessage[0]);
