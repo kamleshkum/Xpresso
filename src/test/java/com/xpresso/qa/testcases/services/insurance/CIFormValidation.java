@@ -22,7 +22,7 @@ import com.xpresso.qa.utilites.Testutil;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class FormValidationNew extends TestBase {
+public class CIFormValidation extends TestBase {
 
    
     CIResultPage ciResultPage;
@@ -59,7 +59,7 @@ public class FormValidationNew extends TestBase {
     }
 
     @Test(priority = 1, groups = { "Sanity" })
-    public void ciBasicformValidation() throws SQLException {
+    public void ciBasicDetailformValidation() throws SQLException {
 	 int max = 99999999;
 	    int min = 10000000;
 	    int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
