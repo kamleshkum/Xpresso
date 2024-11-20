@@ -1,11 +1,11 @@
 package com.xpresso.qa.testcases.services.insurance;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import com.xpresso.qa.base.TestBase;
 import com.xpresso.qa.pages.authenticate.AuthenticationPage;
 import com.xpresso.qa.pages.helpdesk.AddComplaintPage;
@@ -13,25 +13,20 @@ import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
 import com.xpresso.qa.pages.services.careInsurance.CIMainPOM;
 import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM;
-
 import com.xpresso.qa.pages.services.careInsurance.CIResultPage;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
 import com.xpresso.qa.utilites.ExcelUtility;
 import com.xpresso.qa.utilites.Testutil;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+public class CIFormValidationTest extends TestBase {
 
-public class CIFormValidation extends TestBase {
-
-   
     CIResultPage ciResultPage;
     CIMobileOTPPOM ciMobileOTPPOM;
     CIMainPOM ciMainPOM;
     SoftAssert softAssert;
-    LoginPage Lginpage;
-    HomePage Hmpage;
-    AddComplaintPage CmplntPage;
+    LoginPage lginPage;
+    HomePage hmPage;
+    AddComplaintPage cmplntPage;
     Testutil util;
     AuthenticationPage authpge;
     // Specify the path to your Excel file
@@ -41,11 +36,11 @@ public class CIFormValidation extends TestBase {
     ExcelUtility excelUtility;
 
     @BeforeClass(groups = { "Sanity" })
-    public void initiate() throws SQLException {
+    public void initiate() {
 	Browserintialize(prop.getProperty("browser"), prop.getProperty("Xpressourl"));
-	Lginpage = new LoginPage();
-	Hmpage = new HomePage();
-	CmplntPage = new AddComplaintPage();
+	lginPage = new LoginPage();
+	hmPage = new HomePage();
+	cmplntPage = new AddComplaintPage();
 	util = new Testutil();
 	authpge = new AuthenticationPage();
 	// cipom=new CIPOM(driverUAT);
@@ -60,14 +55,14 @@ public class CIFormValidation extends TestBase {
 
     @Test(priority = 1, groups = { "Sanity" })
     public void ciBasicDetailformValidation() throws SQLException {
-	 int max = 99999999;
-	    int min = 10000000;
-	    int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
-	    String mobilenumber = "8" + randomWithMathRandom + "7";
+	int max = 99999999;
+	int min = 10000000;
+	int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
+	String mobilenumber = "8" + randomWithMathRandom + "7";
 	loger.info("Enter csp id, password and captcha");
-	Lginpage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
+	lginPage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
 	loger.info("Enter OTP");
-	Lginpage.Login_With_OTP(prop.getProperty("OTP"));
+	lginPage.Login_With_OTP(prop.getProperty("OTP"));
 	loger.info("Click on Help Desk module");
 	System.out.println("this is the mobile number: " + mobilenumber);
 	ciResultPage.goToCareInsurance();
@@ -165,13 +160,12 @@ public class CIFormValidation extends TestBase {
 
     }
 
-   
     @Test(priority = 6, groups = { "Sanity" })
     public void ciformValidationInsuredFirstPart() {
 	ciMainPOM.goToHomeAction();
 	try {
 	    // Example 1: Get the row count of a specific sheet
-	    String sheetName = "CareInsurance"; 
+	    String sheetName = "CareInsurance";
 	    String cTypeValue = excelUtility.getCellData(sheetName, 16, 1);
 	    String sumInsured = excelUtility.getCellData(sheetName, 17, 1);
 	    String insurancePeriod = excelUtility.getCellData(sheetName, 18, 1);
@@ -232,7 +226,6 @@ public class CIFormValidation extends TestBase {
 	softAssert.assertEquals("City is required", insuredPermanentMessage[2]);
 	softAssert.assertEquals("Pin Code is required", insuredPermanentMessage[3]);
 	softAssert.assertAll();
-
     }
 
     @Test(priority = 8, groups = { "Sanity" })

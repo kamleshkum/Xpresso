@@ -347,6 +347,11 @@ public class CIMainPOM {
   @FindBy(xpath = "//div[@id='accordionExample']/div[2]//input[@formcontrolname='communicationPinCode']")
   private WebElement insuredCommunicationPincode;
 
+  @FindBy(xpath="//div[@id='accordionExample']/div[2]//div[@class='cutomCheck']//input[@formcontrolname='redidenceAddress']")
+  private WebElement insuredcheckbox;
+
+
+
   //INSURED FIRST PART MANDATORY MESSAGE//
   @FindBy(xpath = "//button[contains(.,'Insured Detail')]")
   private WebElement InsuredDetailButton;
@@ -423,6 +428,38 @@ public class CIMainPOM {
   @FindBy(xpath = "//button[contains(.,'Calculate Premium')]")
   private WebElement premiumCalculate;
 
+  @FindBy(xpath="//button[contains(.,'Close')]")
+  private WebElement premiumClose;
+
+  @FindBy(xpath="//button[contains(.,'View')]")
+  private WebElement resultView;
+
+  @FindBy(id="searchBar2")
+  private WebElement searchBar;
+
+  @FindBy(xpath="//button[@class='btn btn-outline-primary btnvh fa fa-edit']")
+  private WebElement editButton;
+
+
+  @FindBy(xpath="//h3[@class='modalHed']/b")
+  private WebElement premiumAmount;
+
+  // Payment Pop up
+  @FindBy(id = "flexCheckDefault12")
+  private WebElement firstCheckboxPayment;
+
+  @FindBy(id = "flexCheckDefault")
+  private WebElement secondCheckboxPayment;
+
+  @FindBy(xpath = "//span[@class='optSend']")
+  private WebElement paymentOtp;
+
+  @FindBy(xpath = "//button[contains(.,'Submit')]")
+  private WebElement paymentSubmitButton;
+
+  @FindBy(xpath = "//button[text()='Close']")
+  private WebElement paymentPopUpClose;
+
   WebDriver driver;
   WebDriverWait wait;
   Actions action;
@@ -435,12 +472,106 @@ public class CIMainPOM {
     wait=new WebDriverWait(driver, Duration.ofSeconds(60));
     action=new Actions(driver);
   }
+  public void premiumpopupClose() {
+    wait.until(ExpectedConditions.visibilityOf(premiumClose));
+    premiumClose.click();
+  }
+
+  public void paymentPopUp() {
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='modal-header']")));
+    firstCheckboxPayment.click();
+    secondCheckboxPayment.click();
+    paymentOtp.click();
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='alert alert-dismissable bg-success custom-toastbar-alert text-white']//p")));
+    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='alert alert-dismissable bg-success custom-toastbar-alert text-white']//p")));
+  }
+  public void enterOtpPayment(int otp) {
+    driver.findElement(By.xpath("//input[@formcontrolname='mobileOTP']")).sendKeys("" + otp);
+    paymentSubmitButton.click();
+
+  }
+  public void resultView() {
+    wait.until(ExpectedConditions.visibilityOf(resultView)).click();
+  }
+
+  public void searchproposalno(String proposalno) {
+    searchBar.sendKeys(proposalno);
+  }
+  public String getPremiumAmount() {
+    String premAmt="";
+    try {
+      wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.alert.bg-danger.custom-toastbar-alert p")));
+      String errorText = driver.findElement(By.cssSelector("div.alert.bg-danger.custom-toastbar-alert p")).getText();
+      Reporter.log("error text is: " + errorText);
+      Reporter.log("Payment pop not opened up.");
+    } catch (Exception e) {
+      Reporter.log("checking in the catch block about the pop up.");
+      wait.until(ExpectedConditions.visibilityOf(premiumAmount));
+      premAmt = premiumAmount.getText();
+      return premAmt;
+    }
+    return premAmt;
+  }
+  public void enterInsuredPermanentAddress(String ipadd1, String ipadd2, String iparea, String ipstate, String ipcity, String ippincode, String icontact, String ipemail) {
+    insuredPermanentAddressLine1.sendKeys(ipadd1);
+    insuredPermanentAddressLine2.sendKeys(ipadd2);
+    insuredPermannentAddressArea.sendKeys(iparea);
+
+    action.moveToElement(insuredPermanentStateArrow).perform();
+    insuredPermanentStateArrow.click();
+    wait.until(ExpectedConditions.visibilityOf(arrowWait));
+    insuredPermanentState.sendKeys(ipstate);
+    action.sendKeys(Keys.ENTER).perform();
+
+    action.moveToElement(insuredPermanentCityArrow).perform();
+    wait.until(ExpectedConditions.visibilityOf(insuredPermanentCityArrow)).click();
+    wait.until(ExpectedConditions.visibilityOf(arrowWait));
+    insuredPermanentCity.sendKeys(ipcity);
+    action.sendKeys(Keys.ENTER).perform();
+    insuredPermanentPinCode.sendKeys(ippincode);
+    insuredContact.sendKeys(icontact);
+    insuredEmail.sendKeys(ipemail);
+  }
+  public void enterInsuredDetails(String year, String month, String date, String ifname, String ilname,
+                                  String igend, String irel, String itit) {
+
+    action.moveToElement(calendarButtonInsured).perform();
+    calendarButtonInsured.click();
+    Select selectYear = new Select(driver.findElement(By.xpath("//select[@aria-label='Select year']")));
+    Select selectMonth = new Select(driver.findElement(By.xpath("//select[@aria-label='Select month']")));
+    selectYear.selectByVisibleText(year);
+    selectMonth.selectByVisibleText(month);
+    driver.findElement(By.xpath("//div[@class='btn-light' and text()='" + date + "']")).click();
+    firstNameInsured.sendKeys(ifname);
+    lastNameInsured.sendKeys(ilname);
+
+    action.moveToElement(genderArrowInsured).perform();
+    genderArrowInsured.click();
+    genderInsured.sendKeys(igend);
+    action.sendKeys(Keys.ENTER).build().perform();
+
+    action.moveToElement(relationArrowInsured).perform();
+    relationArrowInsured.click();
+    relationInsured.sendKeys(irel);
+    action.sendKeys(Keys.ENTER).build().perform();
+    titleArrowInsured.click();
+    titleInsured.sendKeys(itit);
+    action.sendKeys(Keys.ENTER).build().perform();
+  }
 
   public void clickCalculatePremiumButton() {
     //wait.until(ExpectedConditions.visibilityOfElementLocated(proposerDetailButton)).click();
     action.sendKeys(Keys.END).perform();
     wait.until(ExpectedConditions.visibilityOf(premiumCalculate));
-    action.moveToElement(premiumCalculate).click();
+    action.moveToElement(premiumCalculate).click().perform();
+  }
+
+  public void calculatePremiumClick(){
+    action.moveToElement(premiumCalculate).click().perform();
+  }
+  public void clickEditButton() {
+    wait.until(ExpectedConditions.elementToBeClickable(editButton)).click();
+
   }
 
   public String[] firstPartMandatoryVerify() {
@@ -639,9 +770,12 @@ public class CIMainPOM {
 
   public void addInsured() {
     wait.until(ExpectedConditions.visibilityOf(addInsured));
-
-    action.moveToElement(addInsured).perform();
-    addInsured.click();
+    action.moveToElement(addInsured).click().perform();
+    //addInsured.click();
+  }
+  public void InsuredcheckboxPermCommSame() {
+    action.moveToElement(insuredcheckbox).perform();
+    insuredcheckbox.click();
   }
   public String[] ProposerMandatoryCommunicationAddress() {
 
@@ -696,7 +830,12 @@ public class CIMainPOM {
     return new String[]{actualCommAdd1,actualCommState,actualCommCity,actualCommPincode,actualEmail};
 
   }
+  public String genderMismatch() {
+    wait.until(ExpectedConditions.visibilityOf(genderMismatchMessage));
+    String genderMsg = genderMismatchMessage.getText().trim();
+    return genderMsg;
 
+  }
 
 
 }
