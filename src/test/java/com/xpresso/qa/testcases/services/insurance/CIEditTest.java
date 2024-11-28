@@ -1,32 +1,29 @@
 package com.xpresso.qa.testcases.services.insurance;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+
+import com.xpresso.qa.base.TestBase;
+import com.xpresso.qa.pages.home.HomePage;
+import com.xpresso.qa.pages.login.LoginPage;
+import com.xpresso.qa.pages.services.careInsurance.CIMainPOM2;
+import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM2;
+import com.xpresso.qa.pages.services.careInsurance.CIResultPage2;
+import com.xpresso.qa.pages.services.careInsurance.DbClass;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Random;
 
-import org.testng.Reporter;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
-import com.xpresso.qa.base.TestBase;
-import com.xpresso.qa.pages.authenticate.AuthenticationPage;
-import com.xpresso.qa.pages.helpdesk.AddComplaintPage;
-import com.xpresso.qa.pages.home.HomePage;
-import com.xpresso.qa.pages.login.LoginPage;
-import com.xpresso.qa.pages.services.careInsurance.CIMainPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIResultPage;
-import com.xpresso.qa.pages.services.careInsurance.DbClass;
-import com.xpresso.qa.utilites.ExcelUtility;
-import com.xpresso.qa.utilites.Testutil;
-
 public class CIEditTest extends TestBase {
+
+    // TestUtility u=new TestUtility();
     int max = 99999999;
     int min = 10000000;
-    int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
-    String mobilenumber = "6" + randomWithMathRandom + "6";
-    // TestUtility u=new TestUtility();
+    String mobilenumber;
     // String mobileNumber=u.randomMobileNumber();
     String coverType = "Individual";
     String[] sinsure = { "50K", "1L", "3L", "5L" };
@@ -88,88 +85,60 @@ public class CIEditTest extends TestBase {
     String proposerpermanentcity = "Gurgaon";
     String proposerpermanentpincode = "122012";
     String proposerEmail = "pouipi@cwewrc.in";
-    
-    CIResultPage ciResultPage;
-    CIMobileOTPPOM ciMobileOTPPOM;
-    CIMainPOM ciMainPOM;
+    CIMainPOM2 ciMainPOM;
     SoftAssert softAssert;
-    LoginPage lginPage;
-    HomePage hmPage;
-    AddComplaintPage cmplntPage;
-    Testutil util;
-    AuthenticationPage authpge;
-    @BeforeClass
-    public void initiate() {
+    CIResultPage2 ciResultPage;
+    CIMobileOTPPOM2 ciMobileOTPPOM;
+    DbClass dbClass;
+    String premAmt;
+    WebDriver webDriver;
+    // CIPOM cipom;
+    LoginPage loginPage;
+    HomePage homePage;
 
-	Browserintialize(prop.getProperty("browser"), prop.getProperty("Xpressourl"));
-	lginPage = new LoginPage();
-	hmPage = new HomePage();
-	cmplntPage = new AddComplaintPage();
-	util = new Testutil();
-	authpge = new AuthenticationPage();
-	// cipom=new CIPOM(driverUAT);
-	ciMainPOM = new CIMainPOM(driver);
-	// ciMandatoryMsgPOM=new CIMandatoryMsgPOM(driverUAT);
-	ciResultPage = new CIResultPage(driver);
-	ciMobileOTPPOM = new CIMobileOTPPOM(driver);
+    @BeforeMethod
+    public void enterFirstPart() throws SQLException, InterruptedException {
+	int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
+	mobilenumber = "6" + randomWithMathRandom + "6";
+	// Initialize the WebDriver for each test
+	Browserintialize("chrome", "https://uatxpro.roinet.in/Login.aspx");
+	// usernameUser=CSP248877
+	// passwordUser=roinet@1234
+	// String usernameAdmin = getProperty("usernameCSP");
+	// String passwordAdmin = getProperty("passwordAdmin");
+	// cipom=new CIPOM(driver);
+	loginPage = new LoginPage();
+	homePage = new HomePage();
+	ciMainPOM = new CIMainPOM2();
+	ciResultPage = new CIResultPage2();
+	ciMobileOTPPOM = new CIMobileOTPPOM2();
 	softAssert = new SoftAssert();
-	
-
-    }
-
-    /*
-     * @Test(priority = 1, testName = "Navigate to Care Insurance Page") public void
-     * CImain() throws SQLException { cipom.careInsurance();
-     * Reporter.log("random number: " + mobilenumber);
-     * cipom.entermobileotp(mobilenumber); DbClass dbClass = new DbClass(); String
-     * query = "select * from lt_logotp where mobile='" + mobilenumber + "'";
-     * Reporter.log("this is query: " + query); try (ResultSet resultSet =
-     * dbClass.executeQuery(query)) { while (resultSet.next()) { int getOtp =
-     * resultSet.getInt("otp"); Reporter.log("this is otp: " + getOtp);
-     * cipom.enterOtp(getOtp); } }
-     * 
-     * }
-     */
-
-    @Test(priority = 1, testName = "filling first part")
-    public void enterFirstPart() throws SQLException {
-	System.out.println("this is the mobile number: " + mobilenumber);
-	loger.info("Enter csp id, password and captcha");
-	lginPage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
-	loger.info("Enter OTP");
-	lginPage.Login_With_OTP(prop.getProperty("OTP"));
-	loger.info("Click on Help Desk module");
+	dbClass = new DbClass();
+	loginPage.login("CSP221853", "roinet@1234", "sddds");
+	loginPage.Login_With_OTP("222111");
 	System.out.println("this is the mobile number: " + mobilenumber);
 	ciResultPage.goToCareInsurance();
 	ciResultPage.clickAddButton();
 	ciMobileOTPPOM.entermobileotp(mobilenumber);
-	DbClass dbClass = new DbClass();
+
 	String query = "select * from lt_logotp where mobile='" + mobilenumber + "'";
 	Reporter.log("this is query: " + query);
 	try (ResultSet resultSet = dbClass.executeQuery(query)) {
 	    while (resultSet.next()) {
 		int getOtp = resultSet.getInt("otp");
-		Reporter.log("this is otp: " + getOtp);
+		System.out.println("this is otp: " + getOtp);
 		ciMobileOTPPOM.enterOtp(getOtp);
+		ciMobileOTPPOM.selectCheckbox();
+		ciMobileOTPPOM.clickSubmit();
 	    }
 	}
 	ciMainPOM.enterFirstPart(coverType, sinsure[sinsuIndex], numberOfMembers, InsuPeriod, InsuProduct, InsuType,
 		nomineeName, nomineeRelation[nomineeRelIndex]);
-    }
-
-    @Test(priority = 2, testName = "filling proposer detail")
-    public void enterProposerDetail() {
 	ciMainPOM.proposerDetailEnter(year, month, date, fname, lname, gend, rel, tit);
 	ciMainPOM.enterProposerPermanentAddress(add1, add2, area, state, city, pincode, propEmail);
 	ciMainPOM.ProposercheckboxPermCommSame();
 	ciMainPOM.openInsuredBlock();
 	ciMainPOM.addInsured();
-    }
-
-    String premAmt;
-
-    @Test(priority = 3, testName = "premium pop up open and close")
-    public void calculatePremium() throws SQLException {
 	ciMainPOM.calculatePremiumClick();
 	premAmt = ciMainPOM.getPremiumAmount();
 	System.out.println("premium amount checking: " + premAmt);
@@ -181,43 +150,76 @@ public class CIEditTest extends TestBase {
 	    softAssert.assertAll();
 	} else {
 	    ciMainPOM.premiumpopupClose();
-	    ciMainPOM.resultView();
-	    String proposalno = "";
-	    try {
-		DbClass dbClass = new DbClass();
-		String query = "select top 1* from tm_careinsuranceproposerdetails where channelid=398921 order by createddate desc";
-		try (ResultSet resultSet = dbClass.executeQuery(query)) {
-		    while (resultSet.next()) {
-			proposalno = resultSet.getString("proposalno");
-			System.out.println("prop number: " + proposalno);
-		    }
-		}
-		ciMainPOM.searchproposalno(proposalno);
-	    } catch (Exception e) {
-		ciMainPOM.resultView();
-		DbClass dbClass = new DbClass();
-		String query = "select top 1* from tm_careinsuranceproposerdetails where channelid=398921 order by createddate desc";
-		try (ResultSet resultSet = dbClass.executeQuery(query)) {
-		    while (resultSet.next()) {
-			proposalno = resultSet.getString("proposalno");
-			System.out.println("prop number: " + proposalno);
-		    }
-		}
-		ciMainPOM.searchproposalno(proposalno);
-	    }
 	}
     }
 
-    @Test(priority = 4)
-    public void clickEdit() {
-	ciMainPOM.clickEditButton();
+    @Test(priority = 1, testName = "Edit With 50K and 2 Members")
+    public void editWithFiftyThousandTwoMembers() throws SQLException {
+	editDetails("50K", "2");
     }
 
-    @Test(priority = 5)
-    public void editBasicDetails() throws SQLException {
-	ciMainPOM.enterFirstPart("Family Floater", "50K", editNumberMember, InsuPeriod, InsuProduct, InsuType,
+    @Test(priority = 2, testName = "Edit With 50K and 3 Members")
+    public void editWithFiftyThousandThreeMembers() throws SQLException {
+	editDetails("50K", "3");
+    }
+
+    @Test(priority = 3, testName = "Edit With 50K and 4 Members")
+    public void editWithFiftyThousandFourMembers() throws SQLException {
+	editDetails("50K", "4");
+    }
+
+    @Test(priority = 4, testName = "Edit With 50K and 5 Members")
+    public void editWithFiftyThousandFiveMembers() throws SQLException {
+	editDetails("50K", "5");
+    }
+
+    @Test(priority = 5, testName = "Edit With 50K and 6 Members")
+    public void editWithFiftyThousandSixMembers() throws SQLException {
+	editDetails("50K", "6");
+    }
+
+    @Test(priority = 6, testName = "Edit With 1L and 2 Members")
+    public void editWithOneLakhTwoMembers() throws SQLException {
+	editDetails("1L", "2");
+    }
+
+    @Test(priority = 7, testName = "Edit With 1L and 3 Members")
+    public void editWithOneLakhThreeMembers() throws SQLException {
+	editDetails("1L", "3");
+    }
+
+    public void editDetails(String sumIns, String numbermembers) throws SQLException {
+	ciResultPage.resultView();
+	// String propNumberBEdit=propnumberbeforeedit();
+	String proposalnoBeforeEdit = propnumberbeforeedit();
+	/*
+	 * String proposalnoBeforeEdit = ""; String proposalNumberBeforeEdit =
+	 * "select top 1 * from tm_careinsuranceproposerdetails where channelid=398921 order by createddate desc"
+	 * ; try { try (ResultSet resultSet =
+	 * dbClass.executeQuery(proposalNumberBeforeEdit)) { while (resultSet.next()) {
+	 * proposalnoBeforeEdit = resultSet.getString("proposalno");
+	 * System.out.println("prop number: " + proposalnoBeforeEdit); } }
+	 */
+	try {
+	    System.out.println("prop number after while loop: " + proposalnoBeforeEdit);
+	    // System.out.println("prop number in try block: "+propNumberBEdit);
+	    ciMainPOM.searchproposalno(proposalnoBeforeEdit);
+	} catch (Exception e) {
+	    ciMainPOM.resultView();
+	    /*
+	     * try (ResultSet resultSet = dbClass.executeQuery(proposalNumberBeforeEdit)) {
+	     * while (resultSet.next()) {
+	     * System.out.println("proposal number in the catch "+proposalnoBeforeEdit);
+	     * proposalnoBeforeEdit = resultSet.getString("proposalno");
+	     * System.out.println("prop number in the catch: " + proposalnoBeforeEdit); } }
+	     */
+	    System.out.println("proposal number in catch block: " + proposalnoBeforeEdit);
+	    ciMainPOM.searchproposalno(proposalnoBeforeEdit);
+	}
+	ciMainPOM.clickEditButton();
+	ciMainPOM.enterFirstPart("Family Floater", sumIns, numbermembers, InsuPeriod, InsuProduct, InsuType,
 		nomineeName, nRelation);
-	int members = Integer.parseInt(editNumberMember);
+	int members = Integer.parseInt(numbermembers);
 	if (members >= 2) {
 
 	    addInsuredDetails(spouseyear, spousemonth, spousedate, spousegend, spouserel, spousetit, "Rohit", "Mathur");
@@ -226,9 +228,9 @@ public class CIEditTest extends TestBase {
 	    // Generate new random indices for each iteration
 	    addInsuredDetails(childyear, childmonth, childdate, childgend, childrel, childtit, "heuocc", "cuisc");
 	}
-	ciMainPOM.calculatePremiumClick();
+	ciMainPOM.clickCalculatePremiumButton();
 	ciMainPOM.paymentPopUp();
-	DbClass dbClass = new DbClass();
+//   dbClass = new DbClass();
 	String query = "select top 1* from lt_logotp where mobile='" + mobilenumber + "'";
 	Reporter.log("this is query: " + query);
 	ResultSet resultSet = dbClass.executeQuery(query);
@@ -237,7 +239,28 @@ public class CIEditTest extends TestBase {
 	    Reporter.log("this is otp: " + getOtp);
 	    ciMainPOM.enterOtpPayment(getOtp);
 	}
-	ciMainPOM.resultView();
+	String polNumber = ciMainPOM.getPolicyNumber();
+	System.out.println("policy number: " + polNumber);
+	ciResultPage.resultView();
+	// String propNumberAfterEdit=propnumberbeforeedit();
+	String proposalnoAfterEdit = propnumberbeforeedit();
+	/*
+	 * String proposalnoAfterEdit = ""; String proposalNumberAfterEdit =
+	 * "select top 1 * from tm_careinsuranceproposerdetails where channelid=398921 order by createddate desc"
+	 * ;
+	 * 
+	 * try (ResultSet resultSet1 = dbClass.executeQuery(proposalNumberAfterEdit)) {
+	 * while (resultSet1.next()) { proposalnoAfterEdit =
+	 * resultSet1.getString("proposalno");
+	 * System.out.println("prop number checking after edit: " +
+	 * proposalnoAfterEdit); } }
+	 */
+	System.out.println("prop number after edit: " + proposalnoAfterEdit);
+	ciResultPage.searchproposalno(proposalnoAfterEdit);
+	String coverType = ciResultPage.coverTypeVerify();
+	softAssert.assertEquals(coverType, "FAMILYFLOATER", "cover type does not match");
+	softAssert.assertAll();
+
     }
 
     private void addInsuredDetails(String year, String month, String date, String gender, String relation, String title,
@@ -249,7 +272,20 @@ public class CIEditTest extends TestBase {
 		proposerpermanentpincode, mobilenumber, proposerEmail));
 	ciMainPOM.InsuredcheckboxPermCommSame();
 	ciMainPOM.addInsured();
+    }
 
+    public String propnumberbeforeedit() throws SQLException {
+	String proposalnoBeforeEdit = "";
+	String proposalNumberBeforeEdit = "select top 1 * from tm_careinsuranceproposerdetails where channelid=398921 order by createddate desc";
+
+	try (ResultSet resultSet = dbClass.executeQuery(proposalNumberBeforeEdit)) {
+	    while (resultSet.next()) {
+		proposalnoBeforeEdit = resultSet.getString("proposalno");
+		System.out.println("prop number: " + proposalnoBeforeEdit);
+	    }
+	}
+	System.out.println("prop number after while loop: " + proposalnoBeforeEdit);
+	return proposalnoBeforeEdit;
     }
 
     // Helper method to wait for an action and perform it
@@ -262,7 +298,13 @@ public class CIEditTest extends TestBase {
 	}
     }
 
+    @AfterMethod
+    public void quit() {
+	driver.close();
+    }
     /*
-     * @AfterTest public void quit(){ driverUAT.quit(); }
+     * @AfterClass public void afterClass() { // Quit the WebDriver after all tests
+     * are done if (driverUAT != null) { driverUAT.quit(); // This will ensure the
+     * driver is only quit once after all tests }
      */
 }

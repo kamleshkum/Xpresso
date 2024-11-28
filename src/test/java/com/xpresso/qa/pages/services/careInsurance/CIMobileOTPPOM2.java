@@ -8,9 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.xpresso.qa.base.TestBase;
+
 import java.time.Duration;
 
-public class CIMobileOTPPOM {
+public class CIMobileOTPPOM2 extends TestBase {
 
   //Care Insurance Enter Mobile and Otp and check for mandatory messages
   @FindBy(id = "mobleNumber11")
@@ -37,10 +39,10 @@ public class CIMobileOTPPOM {
   @FindBy(xpath = "//div[@class='col-md-3']//span[@class='optSend']")
   private WebElement sendotp;
 
-WebDriver driver;
+
 WebDriverWait wait;
-  public CIMobileOTPPOM(WebDriver driver) {
-    this.driver=driver;
+  public CIMobileOTPPOM2() {
+
     PageFactory.initElements(driver,this);
     wait=new WebDriverWait(driver, Duration.ofSeconds(60));
   }
@@ -56,7 +58,13 @@ WebDriverWait wait;
   public void enterOtp(int otp) {
     wait.until(ExpectedConditions.visibilityOf(OtpCI));
     OtpCI.sendKeys("" + otp);
+
+  }
+  public void selectCheckbox(){
     selectCheckbox.click();
+
+  }
+  public void clickSubmit(){
     submitButton.click();
   }
 }

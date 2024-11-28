@@ -2,68 +2,73 @@ package com.xpresso.qa.testcases.services.insurance;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import com.xpresso.qa.base.TestBase;
-import com.xpresso.qa.pages.authenticate.AuthenticationPage;
-import com.xpresso.qa.pages.helpdesk.AddComplaintPage;
 import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
-import com.xpresso.qa.pages.services.careInsurance.CIMainPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIResultPage;
+import com.xpresso.qa.pages.services.careInsurance.CIMainPOM2;
+import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM2;
+import com.xpresso.qa.pages.services.careInsurance.CIResultPage2;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
-import com.xpresso.qa.utilites.ExcelUtility;
-import com.xpresso.qa.utilites.Testutil;
 
 public class CIFormValidationTest extends TestBase {
 
-    CIResultPage ciResultPage;
-    CIMobileOTPPOM ciMobileOTPPOM;
-    CIMainPOM ciMainPOM;
+    CIResultPage2 ciResultPage;
+    CIMobileOTPPOM2 ciMobileOTPPOM;
+    CIMainPOM2 ciMainPOM;
     SoftAssert softAssert;
-    LoginPage lginPage;
-    HomePage hmPage;
-    AddComplaintPage cmplntPage;
-    Testutil util;
-    AuthenticationPage authpge;
+	LoginPage loginPage;
+	HomePage homePage;
+
     // Specify the path to your Excel file
     String excelFilePath = "C:\\Users\\rohit.mathur\\Roinet\\Xpresso\\src\\test\\java\\com\\xpresso\\qa\\testdata\\Xpresso_TestData.xlsx";
 
     // Instantiate the ExcelUtility class
-    ExcelUtility excelUtility;
 
+	int max = 99999999;
+	int min = 10000000;
+	String mobilenumber;
     @BeforeClass(groups = { "Sanity" })
-    public void initiate() {
-	Browserintialize(prop.getProperty("browser"), prop.getProperty("Xpressourl"));
+    public void initiate() throws InterruptedException {
+		Browserintialize("chrome", "https://uatxpro.roinet.in/Login.aspx");
+		loginPage=new LoginPage();
+		homePage = new HomePage();
+	/*Browserintialize(prop.getProperty("browser"), prop.getProperty("Xpressourl"));
 	lginPage = new LoginPage();
 	hmPage = new HomePage();
 	cmplntPage = new AddComplaintPage();
 	util = new Testutil();
-	authpge = new AuthenticationPage();
+	authpge = new AuthenticationPage();*/
 	// cipom=new CIPOM(driverUAT);
-	ciMainPOM = new CIMainPOM(driver);
+	ciMainPOM = new CIMainPOM2();
 	// ciMandatoryMsgPOM=new CIMandatoryMsgPOM(driverUAT);
-	ciResultPage = new CIResultPage(driver);
-	ciMobileOTPPOM = new CIMobileOTPPOM(driver);
+	ciResultPage = new CIResultPage2();
+	ciMobileOTPPOM = new CIMobileOTPPOM2();
+
 	softAssert = new SoftAssert();
-	excelUtility = new ExcelUtility(excelFilePath);
+		loginPage.login("CSP221853", "roinet@1234", "sddds");
+		loginPage.Login_With_OTP("222111");
+	//excelUtility = new ExcelUtility(excelFilePath);
 
     }
 
     @Test(priority = 1, groups = { "Sanity" })
-    public void ciBasicDetailformValidation() throws SQLException {
+    public void ciBasicDetailformValidation() throws SQLException, InterruptedException {
 	int max = 99999999;
 	int min = 10000000;
 	int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
 	String mobilenumber = "8" + randomWithMathRandom + "7";
-	loger.info("Enter csp id, password and captcha");
+	/*loger.info("Enter csp id, password and captcha");
 	lginPage.login(prop.getProperty("CSP"), prop.getProperty("password"), prop.getProperty("captcha"));
 	loger.info("Enter OTP");
 	lginPage.Login_With_OTP(prop.getProperty("OTP"));
-	loger.info("Click on Help Desk module");
+	loger.info("Click on Help Desk module");*/
 	System.out.println("this is the mobile number: " + mobilenumber);
 	ciResultPage.goToCareInsurance();
 	ciResultPage.clickAddButton();
@@ -76,6 +81,8 @@ public class CIFormValidationTest extends TestBase {
 		int getOtp = resultSet.getInt("otp");
 		Reporter.log("this is otp: " + getOtp);
 		ciMobileOTPPOM.enterOtp(getOtp);
+			ciMobileOTPPOM.selectCheckbox();
+			ciMobileOTPPOM.clickSubmit();
 	    }
 	}
 	ciMainPOM.clickCalculatePremiumButton();
@@ -164,7 +171,7 @@ public class CIFormValidationTest extends TestBase {
     public void ciformValidationInsuredFirstPart() {
 	ciMainPOM.goToHomeAction();
 	try {
-	    // Example 1: Get the row count of a specific sheet
+	   /* // Example 1: Get the row count of a specific sheet
 	    String sheetName = "CareInsurance";
 	    String cTypeValue = excelUtility.getCellData(sheetName, 16, 1);
 	    String sumInsured = excelUtility.getCellData(sheetName, 17, 1);
@@ -190,12 +197,12 @@ public class CIFormValidationTest extends TestBase {
 	    String pstate = excelUtility.getCellData(sheetName, 12, 1);
 	    String pcity = excelUtility.getCellData(sheetName, 13, 1);
 	    String ppincode = excelUtility.getCellData(sheetName, 14, 1);
-	    String propEmail = excelUtility.getCellData(sheetName, 15, 1);
+	    String propEmail = excelUtility.getCellData(sheetName, 15, 1);*/
 
-	    ciMainPOM.enterFirstPart(cTypeValue, sumInsured, numberMember, insurancePeriod, insuranceProduct,
-		    insuranceType, nomineeName, nomineeRel);
-	    ciMainPOM.proposerDetailEnter(year, month, date, firstname, lastname, gend, rel, title);
-	    ciMainPOM.enterProposerPermanentAddress(add1, add2, area, pstate, pcity, ppincode, propEmail);
+	    ciMainPOM.enterFirstPart("Individual", "50K", "1", "1Y", "Group Care 360°(ROINET)-GMC",
+		    "Health Insurance", "Rohit", "BROTHER");
+	    ciMainPOM.proposerDetailEnter("1990", "Jul", "3", "Rohit", "dicu", "Male", "SELF", "Mr.");
+	    ciMainPOM.enterProposerPermanentAddress("poipoo ouwep pipi pi", "add2", "area", "DELHI &", "Gurgaon", "122012", "cdicu@cdc.in");
 	} catch (Exception e) {
 	    System.out.println("check this error because of excel upload" + e.getMessage());
 
@@ -226,6 +233,7 @@ public class CIFormValidationTest extends TestBase {
 	softAssert.assertEquals("City is required", insuredPermanentMessage[2]);
 	softAssert.assertEquals("Pin Code is required", insuredPermanentMessage[3]);
 	softAssert.assertAll();
+
     }
 
     @Test(priority = 8, groups = { "Sanity" })

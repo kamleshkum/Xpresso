@@ -1,9 +1,6 @@
 package com.xpresso.qa.pages.services.careInsurance;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,9 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
-import java.time.Duration;
+import com.xpresso.qa.base.TestBase;
 
-public class CIMainPOM {
+import java.time.Duration;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CIMainPOM2 extends TestBase {
 
   //Care First Part Fields
   @FindBy(xpath = "//div[@class='row mt-1']//div[@class='row']/div[1]//input")
@@ -460,14 +461,17 @@ public class CIMainPOM {
   @FindBy(xpath = "//button[text()='Close']")
   private WebElement paymentPopUpClose;
 
-  WebDriver driver;
+  @FindBy (xpath="//p[contains(.,'Your Policy Generated Successfully with policy no')]")
+  private WebElement policyNumber;
+
+
   WebDriverWait wait;
   Actions action;
   SoftAssert softAssert;
   TestUtility testUtility;
 
-  public CIMainPOM(WebDriver driver) {
-    this.driver=driver;
+  public CIMainPOM2() {
+
     PageFactory.initElements(driver,this);
     wait=new WebDriverWait(driver, Duration.ofSeconds(60));
     action=new Actions(driver);
@@ -490,6 +494,45 @@ public class CIMainPOM {
     paymentSubmitButton.click();
 
   }
+
+  public String getPolicyNumber() {
+    try {
+      wait.until(ExpectedConditions.visibilityOf(policyNumber));
+      String pnumber = policyNumber.getText().trim();
+// Regular expression to find the policy number
+      String regex = "(\\d+)";
+
+      // Create a pattern object
+      Pattern pattern = Pattern.compile(regex);
+
+      // Create a matcher object
+      Matcher matcher = pattern.matcher(pnumber);
+
+      if (matcher.find()) {
+        String policyNo = matcher.group(1);
+        System.out.println("Extracted Policy Number: " + policyNo);
+        if(policyNo.isEmpty()){
+          Reporter.log("policy is generated with the pop up but there is no policy number in it. Check log for more info.");
+          softAssert.assertEquals(true,false);
+          softAssert.assertAll();
+        }
+        else{
+          wait.until(ExpectedConditions.invisibilityOf(policyNumber));
+          return matcher.group(1);
+        }
+
+      } else {
+
+        System.out.println("Policy number not found in the string.");
+        wait.until(ExpectedConditions.invisibilityOf(policyNumber));
+        return null;
+      }
+    } catch (TimeoutException timeoutException) {
+      Reporter.log("time out exception because the policy is not created. " + timeoutException.getMessage());
+      return null;
+    }
+
+    return  null;}
   public void resultView() {
     wait.until(ExpectedConditions.visibilityOf(resultView)).click();
   }
@@ -561,7 +604,9 @@ public class CIMainPOM {
 
   public void clickCalculatePremiumButton() {
     //wait.until(ExpectedConditions.visibilityOfElementLocated(proposerDetailButton)).click();
-    action.sendKeys(Keys.END).perform();
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+    //action.sendKeys(Keys.END).perform();
     wait.until(ExpectedConditions.visibilityOf(premiumCalculate));
     action.moveToElement(premiumCalculate).click().perform();
   }
