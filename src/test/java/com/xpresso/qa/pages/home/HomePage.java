@@ -1,8 +1,13 @@
 package com.xpresso.qa.pages.home;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.xpresso.qa.base.TestBase;
 
@@ -38,8 +43,8 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//a[text()='WALLET']")
 	WebElement WALLET;
 
-	@FindBy(xpath = "//a[text()='SERVICES'")
-	WebElement SERVICES;
+	 @FindBy(xpath = "//a[contains(.,'SERVICES ')]")
+	  WebElement SERVICES;
 
 	@FindBy(xpath = "//a[text()='PAN CARD']")
 	WebElement PANCARD;
@@ -69,11 +74,17 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//ul[@id='Menu2_Menuid']/li[1]/ul/li[4]")
 	WebElement GoladLoanLead;
 	
+	@FindBy(xpath = "//a[contains(.,'Courier Service')]")
+        WebElement courierService;
 	
+	 Actions actions;
+	  WebDriverWait wait;
 	
 	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
+		  wait=new WebDriverWait(driver, Duration.ofSeconds(60));
+		  actions=new Actions(driver);
 	}
 
 	public String verifypagetitle() {
@@ -91,6 +102,13 @@ public class HomePage extends TestBase {
 		return AvailaibleBalance.getText();
 
 	}
+	public void goToCourierService(){
+	    wait.until(ExpectedConditions.visibilityOf(SERVICES));
+	    actions.moveToElement(SERVICES).perform();
+	    actions.moveToElement(courierService).click().perform();
+
+
+	  }
 	
 	public void ClickXpressoImge() {
 		XpressoImage.click();
