@@ -468,7 +468,7 @@ public class CIMainPOM2 extends TestBase {
   WebDriverWait wait;
   Actions action;
   SoftAssert softAssert;
-  TestUtility testUtility;
+  
 
   public CIMainPOM2() {
 

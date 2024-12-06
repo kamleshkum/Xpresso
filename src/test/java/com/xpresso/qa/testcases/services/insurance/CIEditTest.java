@@ -96,7 +96,7 @@ public class CIEditTest extends TestBase {
     LoginPage loginPage;
     HomePage homePage;
 
-    @BeforeMethod
+    @BeforeMethod(groups = { "Sanity" })
     public void enterFirstPart() throws SQLException, InterruptedException {
 	int randomWithMathRandom = (int) ((Math.random() * (max - min)) + min);
 	mobilenumber = "6" + randomWithMathRandom + "6";
@@ -153,37 +153,37 @@ public class CIEditTest extends TestBase {
 	}
     }
 
-    @Test(priority = 1, testName = "Edit With 50K and 2 Members")
+    @Test(priority = 1, testName = "Edit With 50K and 2 Members",groups = { "Sanity" })
     public void editWithFiftyThousandTwoMembers() throws SQLException {
 	editDetails("50K", "2");
     }
 
-    @Test(priority = 2, testName = "Edit With 50K and 3 Members")
+    @Test(priority = 2, testName = "Edit With 50K and 3 Members",groups = { "Sanity" })
     public void editWithFiftyThousandThreeMembers() throws SQLException {
 	editDetails("50K", "3");
     }
 
-    @Test(priority = 3, testName = "Edit With 50K and 4 Members")
+    @Test(priority = 3, testName = "Edit With 50K and 4 Members",groups = { "Sanity" })
     public void editWithFiftyThousandFourMembers() throws SQLException {
 	editDetails("50K", "4");
     }
 
-    @Test(priority = 4, testName = "Edit With 50K and 5 Members")
+    @Test(priority = 4, testName = "Edit With 50K and 5 Members",groups = { "Sanity" })
     public void editWithFiftyThousandFiveMembers() throws SQLException {
 	editDetails("50K", "5");
     }
 
-    @Test(priority = 5, testName = "Edit With 50K and 6 Members")
+    @Test(priority = 5, testName = "Edit With 50K and 6 Members",groups = { "Sanity" })
     public void editWithFiftyThousandSixMembers() throws SQLException {
 	editDetails("50K", "6");
     }
 
-    @Test(priority = 6, testName = "Edit With 1L and 2 Members")
+    @Test(priority = 6, testName = "Edit With 1L and 2 Members",groups = { "Sanity" })
     public void editWithOneLakhTwoMembers() throws SQLException {
 	editDetails("1L", "2");
     }
 
-    @Test(priority = 7, testName = "Edit With 1L and 3 Members")
+    @Test(priority = 7, testName = "Edit With 1L and 3 Members",groups = { "Sanity" })
     public void editWithOneLakhThreeMembers() throws SQLException {
 	editDetails("1L", "3");
     }

@@ -13,6 +13,7 @@ import com.xpresso.qa.pages.services.careInsurance.CIMainPOM2;
 import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM2;
 import com.xpresso.qa.pages.services.careInsurance.CIResultPage2;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
+import com.xpresso.qa.utilites.ExcelUtility;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -29,9 +30,9 @@ public class InsuranceFiftyThousand extends TestBase{
   String usernameAdmin;
   String passwordAdmin;
   String coverType = "Individual";
-  String[] sinsure = {"50K", "1L", "3L", "5L"};
+  //String[] sinsure = {"50K", "1L", "3L", "5L"};
   Random random = new Random();
-  int sinsuIndex = random.nextInt(sinsure.length);
+  //int sinsuIndex = random.nextInt(sinsure.length);
   String numberOfMembers = "1";
   int numberOfMembersCompare = 1;
   String InsuPeriod = "1Y";
@@ -39,13 +40,13 @@ public class InsuranceFiftyThousand extends TestBase{
   String InsuProduct = "Group Care 360°(ROINET)-GMC";
   String InsuType = "Health Insurance";
   String nomineeName = "Rohit";
-  String[] nomineeRelation = {"MOTHER", "SON", "DAUGHTER", "WIFE", "HUSBAND", "BROTHER", "FATHER", "GRAND FATHER", "GRAND MOTHER", "MOTHER-IN-LAW", "SISTER-IN-LAW", "BROTHER-IN-LAW"};// "MOTHER","SON", "DAUGHTER", "WIFE", "HUSBAND", "BROTHER", "FATHER", "GRAND FATHER", "GRAND MOTHER","MOTHER-IN-LAW", "SISTER-IN-LAW","BROTHER-IN-LAW"
-  int nomineeRelIndex = random.nextInt(nomineeRelation.length);
+  //String[] nomineeRelation = {"MOTHER", "SON", "DAUGHTER", "WIFE", "HUSBAND", "BROTHER", "FATHER", "GRAND FATHER", "GRAND MOTHER", "MOTHER-IN-LAW", "SISTER-IN-LAW", "BROTHER-IN-LAW"};// "MOTHER","SON", "DAUGHTER", "WIFE", "HUSBAND", "BROTHER", "FATHER", "GRAND FATHER", "GRAND MOTHER","MOTHER-IN-LAW", "SISTER-IN-LAW","BROTHER-IN-LAW"
+  //int nomineeRelIndex = random.nextInt(nomineeRelation.length);
 
-  String year = "1990";
-  String month = "Jul";
-  String date = "3";
-  String fname = "iyu";
+  //String year = "1990";
+  //String month = "Jul";
+ // String date = "3";
+  //String fname = "iyu";
   String lname = "trtyt";
   String gend = "Male";
   String genderDB = "M";
@@ -111,7 +112,7 @@ public class InsuranceFiftyThousand extends TestBase{
   Date now = new Date();
   // Define the date format
   DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.S");
-
+  ExcelUtility excelUtility;
   // Get tomorrow's date with time set to 00:00:00.0
   LocalDate tomorrowDate = LocalDate.now().plusDays(1);
   LocalDateTime startDate = tomorrowDate.atTime(LocalTime.MIDNIGHT);
@@ -200,7 +201,7 @@ public class InsuranceFiftyThousand extends TestBase{
   @Test(priority = 0,testName = "50K with 1 Member")
 public void withFiftyThousandOneMember() throws SQLException {
   ciMainPOM.enterFirstPart("Individual","50K","1",InsuPeriod,InsuProduct,InsuType,nomineeName,"BROTHER");
-  ciMainPOM.proposerDetailEnter(year, month, date, fname, lname, gend, rel, tit);
+  ciMainPOM.proposerDetailEnter("1990", "Jul", "3", "iyu", lname, gend, rel, tit);
   ciMainPOM.enterProposerPermanentAddress(add1, add2, area, state,
         city, pincode, propEmail);
   ciMainPOM.ProposercheckboxPermCommSame();
@@ -390,24 +391,12 @@ public void withFiftyThousandOneMember() throws SQLException {
           commStateName = resultSetCommCityState.getString("statename");
         }
       }
-      switch (sinsure[sinsuIndex]) {
-        case "50K" -> {
-          Reporter.log("printing sum insured of 50K by the user: " + sinsure[sinsuIndex]);
+      
+        
+          Reporter.log("printing sum insured of 50K by the user: 50K " );
           Reporter.log(" printing sum insured of 50K from DB: " + suminsured);
-        }
-        case "1L" -> {
-          Reporter.log("printing sum insured of 1L by the user: " + sinsure[sinsuIndex]);
-          Reporter.log(" printing sum insured of 1L from DB: " + suminsured);
-        }
-        case "3L" -> {
-          Reporter.log("printing sum insured of 3L by the user: " + sinsure[sinsuIndex]);
-          Reporter.log(" printing sum insured of 3L from DB: " + suminsured);
-        }
-        default -> {
-          Reporter.log("printing sum insured of 5L by the user: " + sinsure[sinsuIndex]);
-          Reporter.log(" printing sum insured of 5L from DB: " + suminsured);
-        }
-      }
+        
+      
       // Use the policy number for database validation
       // For example:
       // DatabaseUtils.checkPolicyNumberInDatabase(policyNumber);
@@ -420,8 +409,8 @@ public void withFiftyThousandOneMember() throws SQLException {
     // Assertions with custom messages including actual values
     softAssert.assertEquals(customermobile, mobilenumber,
           "Custom Mobile number does not match expected value. Expected: " + mobilenumber + ", Actual: " + customermobile);
-    softAssert.assertEquals(firstname, fname,
-          "First name does not match expected value. Expected: " + fname + ", Actual: " + firstname);
+    softAssert.assertEquals(firstname, "iyu",
+          "First name does not match expected value. Expected: iyu, Actual: " + firstname);
     softAssert.assertEquals(lastname, lname,
           "Last name does not match expected value. Expected: " + lname + ", Actual: " + lastname);
     softAssert.assertEquals(dob, dateCompareDB,
@@ -462,22 +451,12 @@ public void withFiftyThousandOneMember() throws SQLException {
           "STD code does not match expected value. Expected: +91, Actual: " + stdcode);
     softAssert.assertEquals(nominee, nomineeName,
           "Nominee name does not match expected value. Expected: " + nomineeName + ", Actual: " + nominee);
-    Reporter.log("this is nominee relation: " + nomineeRelation[nomineeRelIndex]);
+    Reporter.log("this is nominee relation: BROTHER" );
     //"MOTHER-IN-LAW", "SISTER-IN-LAW","BROTHER-IN-LAW"
-    switch (nomineeRelation[nomineeRelIndex]) {
-      case "MOTHER-IN-LAW" -> softAssert.assertEquals(nomineerelationwithproposer, "MOTHERINLAW",
-            "Nominee relation with proposer does not match expected value. Expected: MOTHERINLAW, Actual: " + nomineerelationwithproposer);
-      case "SISTER-IN-LAW" -> softAssert.assertEquals(nomineerelationwithproposer, "SISTERINLAW",
-            "Nominee relation with proposer does not match expected value. Expected: SISTERINLAW, Actual: " + nomineerelationwithproposer);
-      case "BROTHER-IN-LAW" -> softAssert.assertEquals(nomineerelationwithproposer, "BROTHERINLAW",
-            "Nominee relation with proposer does not match expected value. Expected: BROTHERINLAW, Actual: " + nomineerelationwithproposer);
-      case "GRAND MOTHER" -> softAssert.assertEquals(nomineerelationwithproposer, "GRANDMOTHER",
-            "Nominee relation with proposer does not match expected value. Expected: GRANDMOTHER, Actual: " + nomineerelationwithproposer);
-      case "GRAND FATHER" -> softAssert.assertEquals(nomineerelationwithproposer, "GRANDFATHER",
-            "Nominee relation with proposer does not match expected value. Expected: GRANDFATHER, Actual: " + nomineerelationwithproposer);
-      default -> softAssert.assertEquals(nomineerelationwithproposer, nomineeRelation[nomineeRelIndex],
-            "Nominee relation with proposer does not match expected value. Expected: " + nomineeRelation[nomineeRelIndex] + ", Actual: " + nomineerelationwithproposer);
-    }
+    
+      softAssert.assertEquals(nomineerelationwithproposer, "BROTHER",
+            "Nominee relation with proposer does not match expected value. Expected: BROTHER, Actual: " + nomineerelationwithproposer);
+      
     softAssert.assertEquals(createdby, usernameAdmin, "user name does not match. Expected:" + usernameAdmin + " Actual: " + createdby);
     //softAssert.assertEquals(createddate,formattedDate,"created date does not match. Expected: "+formattedDate+" Actual: "+createddate);
     softAssert.assertEquals(covertypeDB.toLowerCase(), coverType.toLowerCase(),
@@ -502,7 +481,7 @@ public void withFiftyThousandOneMember() throws SQLException {
   }
   public void enterDetails(String sumIns, String numbermembers) throws SQLException {
     ciMainPOM.enterFirstPart("Family Floater",sumIns,numbermembers,InsuPeriod,InsuProduct,InsuType,nomineeName,"BROTHER");
-    ciMainPOM.proposerDetailEnter(year, month, date, fname, lname, gend, rel, tit);
+    ciMainPOM.proposerDetailEnter("1990", "Jul", "3", "iyu", lname, gend, rel, tit);
     ciMainPOM.enterProposerPermanentAddress(add1, add2, area, state,
           city, pincode, propEmail);
     ciMainPOM.ProposercheckboxPermCommSame();

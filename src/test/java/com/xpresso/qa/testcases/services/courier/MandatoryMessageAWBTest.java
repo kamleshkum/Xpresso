@@ -1,4 +1,4 @@
-package com.xpresso.qa.testcases.services.courierService;
+package com.xpresso.qa.testcases.services.courier;
 
 
 import org.testng.annotations.BeforeMethod;
@@ -9,8 +9,8 @@ import com.xpresso.qa.base.TestBase;
 import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
-import com.xpresso.qa.pages.services.courierService.AddAWB;
-import com.xpresso.qa.pages.services.courierService.CustomerRateCalculator;
+import com.xpresso.qa.pages.services.courier.AddAWB;
+import com.xpresso.qa.pages.services.courier.CustomerRateCalculator;
 import com.xpresso.qa.utilites.ExcelUtility;
 
 import java.io.IOException;

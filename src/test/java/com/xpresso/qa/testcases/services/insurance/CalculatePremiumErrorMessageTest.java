@@ -14,9 +14,6 @@ import com.xpresso.qa.pages.authenticate.AuthenticationPage;
 import com.xpresso.qa.pages.helpdesk.AddComplaintPage;
 import com.xpresso.qa.pages.home.HomePage;
 import com.xpresso.qa.pages.login.LoginPage;
-import com.xpresso.qa.pages.services.careInsurance.CIMainPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM;
-import com.xpresso.qa.pages.services.careInsurance.CIResultPage;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
 import com.xpresso.qa.utilites.Testutil;
 

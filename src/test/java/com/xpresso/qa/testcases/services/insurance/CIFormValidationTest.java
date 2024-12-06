@@ -16,6 +16,7 @@ import com.xpresso.qa.pages.services.careInsurance.CIMainPOM2;
 import com.xpresso.qa.pages.services.careInsurance.CIMobileOTPPOM2;
 import com.xpresso.qa.pages.services.careInsurance.CIResultPage2;
 import com.xpresso.qa.pages.services.careInsurance.DbClass;
+import com.xpresso.qa.utilites.ExcelUtility;
 
 public class CIFormValidationTest extends TestBase {
 
@@ -25,7 +26,7 @@ public class CIFormValidationTest extends TestBase {
     SoftAssert softAssert;
 	LoginPage loginPage;
 	HomePage homePage;
-
+	ExcelUtility excelUtility;
     // Specify the path to your Excel file
     String excelFilePath = "C:\\Users\\rohit.mathur\\Roinet\\Xpresso\\src\\test\\java\\com\\xpresso\\qa\\testdata\\Xpresso_TestData.xlsx";
 
@@ -54,7 +55,7 @@ public class CIFormValidationTest extends TestBase {
 	softAssert = new SoftAssert();
 		loginPage.login("CSP221853", "roinet@1234", "sddds");
 		loginPage.Login_With_OTP("222111");
-	//excelUtility = new ExcelUtility(excelFilePath);
+	excelUtility = new ExcelUtility(excelFilePath);
 
     }
 
@@ -171,7 +172,7 @@ public class CIFormValidationTest extends TestBase {
     public void ciformValidationInsuredFirstPart() {
 	ciMainPOM.goToHomeAction();
 	try {
-	   /* // Example 1: Get the row count of a specific sheet
+	    // Example 1: Get the row count of a specific sheet
 	    String sheetName = "CareInsurance";
 	    String cTypeValue = excelUtility.getCellData(sheetName, 16, 1);
 	    String sumInsured = excelUtility.getCellData(sheetName, 17, 1);
@@ -197,7 +198,7 @@ public class CIFormValidationTest extends TestBase {
 	    String pstate = excelUtility.getCellData(sheetName, 12, 1);
 	    String pcity = excelUtility.getCellData(sheetName, 13, 1);
 	    String ppincode = excelUtility.getCellData(sheetName, 14, 1);
-	    String propEmail = excelUtility.getCellData(sheetName, 15, 1);*/
+	    String propEmail = excelUtility.getCellData(sheetName, 15, 1);
 
 	    ciMainPOM.enterFirstPart("Individual", "50K", "1", "1Y", "Group Care 360°(ROINET)-GMC",
 		    "Health Insurance", "Rohit", "BROTHER");

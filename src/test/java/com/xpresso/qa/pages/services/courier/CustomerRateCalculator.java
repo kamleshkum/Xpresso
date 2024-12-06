@@ -1,4 +1,4 @@
-package com.xpresso.qa.pages.services.courierService;
+package com.xpresso.qa.pages.services.courier;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

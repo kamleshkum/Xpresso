@@ -170,7 +170,7 @@ public class CIPOM2 {
   WebDriverWait wait;
   Actions action;
   SoftAssert softAssert;
-  TestUtility testUtility;
+  
 
 
   public CIPOM2(WebDriver driver) {
@@ -178,7 +178,7 @@ public class CIPOM2 {
     wait = new WebDriverWait(driver, Duration.ofSeconds(60));
     action = new Actions(driver);
     softAssert = new SoftAssert();
-    testUtility =new TestUtility();
+    
   }
   public By getFirstNameInsured() {
     return firstNameInsured;
