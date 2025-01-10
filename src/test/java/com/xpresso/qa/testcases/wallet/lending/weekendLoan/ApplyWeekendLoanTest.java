@@ -1,18 +1,22 @@
-package LoanLending.WeekendLoan.Test;
+package com.xpresso.qa.testcases.wallet.lending.weekendLoan;
 
-import BasePackage.BaseClassUAT2;
-import DBPackage.DbMTEST;
-import LoanLending.WeekendLoan.Main.AddWeekendLoanPage;
-import LoanLending.WeekendLoan.Main.WeekendLoanResultPage;
-import LongTermLoan.Main.*;
-import Pages.HomePage;
-import Pages.LoginPage;
+
 
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.xpresso.qa.base.TestBase;
+import com.xpresso.qa.pages.home.HomePage;
+import com.xpresso.qa.pages.login.LoginPage;
+import com.xpresso.qa.pages.wallet.lending.weekendLoan.AddWeekendLoanPage;
+import com.xpresso.qa.pages.wallet.lending.weekendLoan.WeekendLoanResultPage;
+import com.xpresso.qa.utilites.DbMTEST;
+import com.xpresso.qa.utilites.ExcelUtility;
+
+
 
 import java.io.File;
 import java.io.FileWriter;
@@ -22,13 +26,13 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ApplyWeekendLoanTest extends BaseClassUAT2 {
+public class ApplyWeekendLoanTest extends TestBase {
   HomePage homePage;
   LoginPage loginPage;
 
   SoftAssert softAssert;
   Actions action;
-  ExcelUtil excelUtil;
+  ExcelUtility excelUtil;
   DbMTEST dbMTEST;
   WeekendLoanResultPage weekendLoanResultPage;
   AddWeekendLoanPage addWeekendLoanPage;
@@ -38,7 +42,7 @@ public class ApplyWeekendLoanTest extends BaseClassUAT2 {
     String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
 
-    excelUtil = new ExcelUtil(excelPath);
+    excelUtil = new ExcelUtility(excelPath);
     homePage = new HomePage();
     loginPage = new LoginPage();
     weekendLoanResultPage=new WeekendLoanResultPage();

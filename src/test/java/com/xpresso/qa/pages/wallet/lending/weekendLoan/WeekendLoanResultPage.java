@@ -1,6 +1,6 @@
-package LoanLending.WeekendLoan.Main;
+package com.xpresso.qa.pages.wallet.lending.weekendLoan;
 
-import BasePackage.BaseClassUAT2;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -9,9 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.xpresso.qa.base.TestBase;
+
 import java.time.Duration;
 
-public class WeekendLoanResultPage extends BaseClassUAT2 {
+public class WeekendLoanResultPage extends TestBase {
 
   WebDriverWait wait;
   Actions action;

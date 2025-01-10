@@ -1,4 +1,4 @@
-package LoanLending.WeekendLoan.Test;
+package com.xpresso.qa.testcases.wallet.lending.weekendLoan;
 
 
 //This test is to verify the loan detail which partner has entered on the admin end.
@@ -7,17 +7,20 @@ package LoanLending.WeekendLoan.Test;
 // Cheque Bank, Cheque of, Pan Number, Aadhar number, these all details will be verified from the DB.
 
 
-import BasePackage.BaseClassUAT2;
-import DBPackage.DbMTEST;
-import LoanLending.LongTermLoan.Main.ExcelUtil;
-import LoanLending.WeekendLoan.Main.AddWeekendLoanPage;
-import LoanLending.WeekendLoan.Main.WeekendLoanResultPage;
-import Pages.HomePage;
-import Pages.LoginPage;
+
+
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.xpresso.qa.base.TestBase;
+import com.xpresso.qa.pages.home.HomePage;
+import com.xpresso.qa.pages.login.LoginPage;
+import com.xpresso.qa.pages.wallet.lending.weekendLoan.AddWeekendLoanPage;
+import com.xpresso.qa.pages.wallet.lending.weekendLoan.WeekendLoanResultPage;
+import com.xpresso.qa.utilites.DbMTEST;
+import com.xpresso.qa.utilites.ExcelUtility;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -29,14 +32,14 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class VerifyLoanDetailAdminAccountTest extends BaseClassUAT2 {
+public class VerifyLoanDetailAdminAccountTest extends TestBase {
 
   HomePage homePage;
   LoginPage loginPage;
 
   SoftAssert softAssert;
   Actions action;
-  ExcelUtil excelUtil;
+  ExcelUtility excelUtil;
   DbMTEST dbMTEST;
   WeekendLoanResultPage weekendLoanResultPage;
   AddWeekendLoanPage addWeekendLoanPage;
@@ -47,7 +50,7 @@ public class VerifyLoanDetailAdminAccountTest extends BaseClassUAT2 {
   public void setup() throws IOException {
     String excelPath = "C:\\Users\\rohit.mathur\\IdeaProjects\\Lending\\src\\LoanLending\\Data\\LongTermData.xlsx";
     Browserintialize("chrome", "https://uatxpresso.roinet.in/Login.aspx");
-    excelUtil = new ExcelUtil(excelPath);
+    excelUtil = new ExcelUtility(excelPath);
     weekendLoanResultPage=new WeekendLoanResultPage();
     addWeekendLoanPage=new AddWeekendLoanPage();
     homePage = new HomePage();
