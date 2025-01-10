@@ -54,15 +54,15 @@ public class AddGuarantorTest extends BaseClassUAT2 {
 
     weekendGuarantor = new WeekendGuarantor();
     String cspUser = excelUtil.getCellData("WeekendLoan", 16, 1).trim();
-    String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
+    //String getChannelId = "select userid from tm_user where usercode='" + cspUser + "'";
 
-    ResultSet rs = dbMTEST.executeQuery(getChannelId);
-    String channelId = "";
-    while (rs.next()) {
-      channelId = rs.getString("userid");
-    }
-    String updateWalletBalance = "update tm_channel set availablelimit=100.00 where channelid=" + channelId;
-    dbMTEST.executeQuery(updateWalletBalance);
+   // ResultSet rs = dbMTEST.executeQuery(getChannelId);
+   // String channelId = "";
+    //while (rs.next()) {
+    //  channelId = rs.getString("userid");
+   // }
+    //String updateWalletBalance = "update tm_channel set availablelimit=100.00 where channelid=" + channelId;
+    //dbMTEST.executeQuery(updateWalletBalance);
     loginPage.login(cspUser, "roinet@1234", "KMJKN");
     loginPage.Login_With_OTP("222111");
     homePage.ClickonWALLET();
@@ -83,7 +83,7 @@ public class AddGuarantorTest extends BaseClassUAT2 {
     } catch (IOException e) {
       e.printStackTrace();
     }
-    weekendLoanResultPage.enterLoanNumber("ROIE05460");
+    weekendLoanResultPage.enterLoanNumber("ROIE05495");
     weekendLoanResultPage.selectLoanStatus("--All--");
     weekendLoanResultPage.clickViewButton();
     weekendLoanResultPage.clickGuarantorDetailButton();
@@ -101,13 +101,12 @@ public class AddGuarantorTest extends BaseClassUAT2 {
       if (!weekendResult.equals(guarantorWindow)) {
         driver.switchTo().window(guarantorWindow);
 
-        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
+        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "mathurrohit875@gmail.com",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
               , "536350660843", "BXRPM6931K", panDoc, aadharDoc, bankStmt, "no","22/07/1993","Male");
         weekendGuarantor.clickSaveButton();
         acceptAlert();
       }
-
     }
     driver.switchTo().window(weekendResult);
   }

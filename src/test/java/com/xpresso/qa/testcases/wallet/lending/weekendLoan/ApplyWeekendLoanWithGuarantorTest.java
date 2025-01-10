@@ -129,7 +129,7 @@ public class ApplyWeekendLoanWithGuarantorTest extends BaseClassUAT2 {
       if (!weekendResult.equals(guarantorWindow)) {
         driver.switchTo().window(guarantorWindow);
 
-        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "rohit.mathur@roinet.in",
+        weekendGuarantor.enterGuarantorDetail("DELHI & NCR", "GURGAON", "Rohit Mathur", "8290336521", "mathurrohit875@gmail.com",
               "Salaried", "friend", "3", "ABCDE TOWER 10, FLAT 903, NEAR HUDA MARKET, TWIN TOWER", "123456"
               , "536350660843", "BXRPM6931K", panDoc, aadharDoc, bankStmt, "no","22/07/1993","Male");
        weekendGuarantor.clickSaveButton();

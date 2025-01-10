@@ -19,7 +19,7 @@ public class WeekendLoanResultPage extends BaseClassUAT2 {
   @FindBy(name = "ctl00$ContentPlaceHolder1$btnAddLaonRequest")
   WebElement addLoanButton;
 
-  @FindBy(name ="ctl00$ContentPlaceHolder1$txtLoanNo")
+  @FindBy(id ="ContentPlaceHolder1_txtloanNo")
   WebElement loanNoTxtBox;
 
   @FindBy(name="ctl00$ContentPlaceHolder1$btnView")
@@ -31,7 +31,7 @@ public class WeekendLoanResultPage extends BaseClassUAT2 {
   @FindBy(xpath="//tr[@class='dgrow1']//td[26]//a")
   WebElement guarantor;
 
-  @FindBy(name="ctl00$ContentPlaceHolder1$ddlSearchLoanStatus")
+  @FindBy(id="ContentPlaceHolder1_ddlSearchloanStatus")
   WebElement ddlSearchLoanStatus;
 
 
